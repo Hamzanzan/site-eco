@@ -1,4 +1,28 @@
 baseURL = "https://monsite-eco.fr/"
 languageCode = "fr-fr"
-title = "ÉcoSite - Pour un web plus vert"
-theme = "ananke" 
+title = "Éco-Numérique"
+theme = "ananke"
+
+[params]
+  custom_css = ["css/custom.css"]
+  favicon = "images/logo.png"
+  site_logo = "images/logo.png"
+  background = "images/header.jpg"
+
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Impacts du Numérique"
+    url = "/impacts/"
+    weight = 2
+  [[menu.main]]
+    name = "Quiz"
+    url = "/quiz/"
+    weight = 3
+  [[menu.main]]
+    name = "Stockage"
+    url = "/stockage/"
+    weight = 4

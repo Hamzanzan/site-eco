@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Éco-Numérique</title>
+    <link>http://localhost:1313/articles/</link>
+    <description>Recent content in Articles on Éco-Numérique</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Évaluer l&#39;impact écologique de son site</title>
+      <link>http://localhost:1313/articles/ecoindex/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/ecoindex/</guid>
+      <description>&lt;p&gt;Connaissez-vous &lt;a href=&#34;https://www.ecoindex.fr/&#34;&gt;EcoIndex&lt;/a&gt; ?&lt;br&gt;&#xA;Cet outil permet de mesurer l&amp;rsquo;impact environnemental de votre site web.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Conseils :&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Testez régulièrement votre site&lt;/li&gt;&#xA;&lt;li&gt;Appliquez les recommandations d&amp;rsquo;optimisation&lt;/li&gt;&#xA;&lt;li&gt;Suivez l&amp;rsquo;évolution de votre score&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

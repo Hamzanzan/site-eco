@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bienvenue sur ÉcoSite on ÉcoSite - Pour un web plus vert</title>
+    <title>Éco-Numérique</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Bienvenue sur ÉcoSite on ÉcoSite - Pour un web plus vert</description>
+    <description>Recent content on Éco-Numérique</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Évaluer l&#39;impact écologique de son site</title>
+      <link>http://localhost:1313/articles/ecoindex/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/ecoindex/</guid>
+      <description>&lt;p&gt;Connaissez-vous &lt;a href=&#34;https://www.ecoindex.fr/&#34;&gt;EcoIndex&lt;/a&gt; ?&lt;br&gt;&#xA;Cet outil permet de mesurer l&amp;rsquo;impact environnemental de votre site web.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Conseils :&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Testez régulièrement votre site&lt;/li&gt;&#xA;&lt;li&gt;Appliquez les recommandations d&amp;rsquo;optimisation&lt;/li&gt;&#xA;&lt;li&gt;Suivez l&amp;rsquo;évolution de votre score&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Impacts du Numérique</title>
+      <link>http://localhost:1313/impacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/impacts/</guid>
+      <description>&lt;h2 id=&#34;les-impacts-environnementaux-du-numérique&#34;&gt;Les impacts environnementaux du numérique&lt;/h2&gt;&#xA;&lt;p&gt;Le numérique a un impact croissant sur l&amp;rsquo;environnement : consommation d&amp;rsquo;énergie, émissions de CO2, extraction de ressources rares, production de déchets électroniques, etc.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;4% des émissions mondiales de gaz à effet de serre sont dues au numérique.&lt;/li&gt;&#xA;&lt;li&gt;La fabrication des équipements représente la majorité de l&amp;rsquo;empreinte carbone du secteur.&lt;/li&gt;&#xA;&lt;li&gt;Les usages (streaming, cloud, emails&amp;hellip;) ont aussi un impact non négligeable.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Adoptez des pratiques plus sobres pour limiter votre impact !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quiz</title>
+      <link>http://localhost:1313/quiz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quiz/</guid>
+      <description>&lt;h2 id=&#34;testez-vos-connaissances-sur-lécologie-numérique&#34;&gt;Testez vos connaissances sur l’écologie numérique&lt;/h2&gt;&#xA;&lt;div id=&#34;quiz&#34;&gt;&#xD;&#xA;  &lt;form id=&#34;eco-quiz&#34;&gt;&#xD;&#xA;    &lt;p&gt;1. Combien de CO2 émet en moyenne une recherche internet ?&lt;/p&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q1&#34; value=&#34;a&#34;&gt; a) 0,7g&lt;br&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q1&#34; value=&#34;b&#34;&gt; b) 7g&lt;br&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q1&#34; value=&#34;c&#34;&gt; c) 70g&lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;p&gt;2. Quel pourcentage des émissions mondiales de GES est dû au numérique ?&lt;/p&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q2&#34; value=&#34;a&#34;&gt; a) 1%&lt;br&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q2&#34; value=&#34;b&#34;&gt; b) 4%&lt;br&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q2&#34; value=&#34;c&#34;&gt; c) 10%&lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;p&gt;3. Quelle action a le plus d&#39;impact pour réduire l&#39;empreinte du numérique ?&lt;/p&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q3&#34; value=&#34;a&#34;&gt; a) Fermer les onglets inutiles&lt;br&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q3&#34; value=&#34;b&#34;&gt; b) Garder son smartphone plus longtemps&lt;br&gt;&#xD;&#xA;    &lt;input type=&#34;radio&#34; name=&#34;q3&#34; value=&#34;c&#34;&gt; c) Vider la corbeille&lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;br&gt;&#xD;&#xA;    &lt;button type=&#34;button&#34; onclick=&#34;checkQuiz()&#34;&gt;Valider mes réponses&lt;/button&gt;&#xD;&#xA;  &lt;/form&gt;&#xD;&#xA;  &lt;div id=&#34;quiz-result&#34;&gt;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;function checkQuiz() {&#xD;&#xA;  let score = 0;&#xD;&#xA;  if (document.querySelector(&#39;input[name=&#34;q1&#34;]:checked&#39;)?.value === &#34;b&#34;) score++;&#xD;&#xA;  if (document.querySelector(&#39;input[name=&#34;q2&#34;]:checked&#39;)?.value === &#34;b&#34;) score++;&#xD;&#xA;  if (document.querySelector(&#39;input[name=&#34;q3&#34;]:checked&#39;)?.value === &#34;b&#34;) score++;&#xD;&#xA;  let result = &#34;Votre score : &#34; + score + &#34;/3&lt;br&gt;&#34;;&#xD;&#xA;  if (score === 3) result += &#34;Bravo, vous êtes un(e) éco-expert !&#34;;&#xD;&#xA;  else if (score === 2) result += &#34;Pas mal, continuez à vous informer !&#34;;&#xD;&#xA;  else result += &#34;N&#39;hésitez pas à explorer le site pour en apprendre plus.&#34;;&#xD;&#xA;  document.getElementById(&#34;quiz-result&#34;).innerHTML = result;&#xD;&#xA;}&#xD;&#xA;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Stockage</title>
+      <link>http://localhost:1313/stockage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/stockage/</guid>
+      <description>&lt;h2 id=&#34;le-stockage-des-données-et-son-impact&#34;&gt;Le stockage des données et son impact&lt;/h2&gt;&#xA;&lt;p&gt;Le stockage de données (cloud, serveurs, datacenters) consomme beaucoup d&amp;rsquo;énergie et a un impact environnemental important.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Privilégiez le stockage local quand c&amp;rsquo;est possible.&lt;/li&gt;&#xA;&lt;li&gt;Supprimez les fichiers inutiles.&lt;/li&gt;&#xA;&lt;li&gt;Choisissez des services cloud éco-responsables.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Réduire le stockage inutile, c&amp;rsquo;est aussi réduire son empreinte carbone !&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

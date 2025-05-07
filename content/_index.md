@@ -1,23 +1,39 @@
 ---
-title: "Bienvenue sur ÉcoSite"
+title: "Éco-Numérique"
 ---
 
-## Un site éco-responsable
+<div class="bandeau-sensibilisation">
+  <span>🌱 Sensibilisation Numérique</span>
+</div>
 
-Ce site a été conçu pour minimiser son impact environnemental.  
-Nous utilisons Hugo, un générateur de site statique ultra-léger, et un hébergement français engagé pour la planète.
-
-### Pourquoi l'écoconception web ?
-
-- **Moins de ressources** : moins d'énergie consommée
-- **Plus rapide** : meilleure expérience utilisateur
-- **Moins de pollution numérique** : chaque octet compte !
+<div class="accueil-flex">
+  <div class="accueil-gauche">
+    <h1>Comprendre l'Impact du Numérique</h1>
+    <p class="sous-titre">
+      Découvrez comment nos habitudes numériques affectent l'environnement et apprenez à adopter des pratiques plus durables pour un avenir plus vert.
+    </p>
+    <div class="boutons-accueil">
+      <a href="/impacts/" class="btn-principal">Explorer les impacts</a>
+      <a href="/quiz/" class="btn-secondaire">Tester vos connaissances</a>
+    </div>
+  </div>
+  <div class="accueil-droite">
+    <img src="/images/foret.jpg" alt="Paysage vert" class="img-accueil"/>
+    <div class="encadre-saviez-vous">
+      <strong>Le saviez-vous ?</strong><br>
+      Une recherche internet émet en moyenne 7g de CO2.<br>
+      Multipliez ce chiffre par des milliards de recherches quotidiennes.
+    </div>
+  </div>
+</div>
 
 ---
 
-### Nos conseils pour un web plus vert
+<div class="bandeau-ressources">
+  <span>📚 Nos ressources</span>
+</div>
 
-- Optimisez vos images
-- Privilégiez le texte
-- Limitez les scripts et animations
-- Choisissez un hébergeur vert 
+<h2>Explorez nos fonctionnalités</h2>
+<p>
+  Nous proposons un ensemble d'outils et de ressources pour comprendre et réduire votre empreinte.
+</p>

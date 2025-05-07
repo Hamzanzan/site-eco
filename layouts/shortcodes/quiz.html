@@ -1,0 +1,36 @@
+<div id="quiz">
+  <form id="eco-quiz">
+    <p>1. Combien de CO2 émet en moyenne une recherche internet ?</p>
+    <input type="radio" name="q1" value="a"> a) 0,7g<br>
+    <input type="radio" name="q1" value="b"> b) 7g<br>
+    <input type="radio" name="q1" value="c"> c) 70g<br>
+
+    <p>2. Quel pourcentage des émissions mondiales de GES est dû au numérique ?</p>
+    <input type="radio" name="q2" value="a"> a) 1%<br>
+    <input type="radio" name="q2" value="b"> b) 4%<br>
+    <input type="radio" name="q2" value="c"> c) 10%<br>
+
+    <p>3. Quelle action a le plus d'impact pour réduire l'empreinte du numérique ?</p>
+    <input type="radio" name="q3" value="a"> a) Fermer les onglets inutiles<br>
+    <input type="radio" name="q3" value="b"> b) Garder son smartphone plus longtemps<br>
+    <input type="radio" name="q3" value="c"> c) Vider la corbeille<br>
+
+    <br>
+    <button type="button" onclick="checkQuiz()">Valider mes réponses</button>
+  </form>
+  <div id="quiz-result"></div>
+</div>
+
+<script>
+function checkQuiz() {
+  let score = 0;
+  if (document.querySelector('input[name="q1"]:checked')?.value === "b") score++;
+  if (document.querySelector('input[name="q2"]:checked')?.value === "b") score++;
+  if (document.querySelector('input[name="q3"]:checked')?.value === "b") score++;
+  let result = "Votre score : " + score + "/3<br>";
+  if (score === 3) result += "Bravo, vous êtes un(e) éco-expert !";
+  else if (score === 2) result += "Pas mal, continuez à vous informer !";
+  else result += "N'hésitez pas à explorer le site pour en apprendre plus.";
+  document.getElementById("quiz-result").innerHTML = result;
+}
+</script> 
