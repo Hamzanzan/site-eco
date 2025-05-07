@@ -1,0 +1,4 @@
+baseURL = "https://monsite-eco.fr/"
+languageCode = "fr-fr"
+title = "ÉcoSite - Pour un web plus vert"
+theme = "ananke" 
