@@ -1,17 +1,43 @@
-body {
-  background: #f5fdf6;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
+:root {
+  --green-bg: #fdfcf5;
+  --green-accent: #217a3b;
+  --green-accent-dark: #1a5e2a;
+  --green-light: #e6f4ea;
+  --text-dark: #1a3d2b;
 }
+
+/* Structure globale */
+body.img-accueil {
+  background: var(--green-bg) !important;
+  font-family: 'Segoe UI', 'Arial', sans-serif !important;
+  color: var(--text-dark);
+}
+
+/* Neutralisation du style sombre de Ananke/Tachyons */
+.bg-black,
+.bg-near-black,
+.bg-dark-gray {
+  background-color: var(--green-accent) !important;
+}
+
+.text-white,
+.near-white {
+  color: var(--text-dark) !important;
+}
+
+/* Bandeaux */
 .bandeau-sensibilisation, .bandeau-ressources {
   display: inline-block;
-  background: #e6f4ea;
-  color: #217a3b;
+  background: #7dd195;
+  color: var(--green-accent);
   border-radius: 20px;
   padding: 6px 18px;
   font-weight: 600;
   margin-bottom: 24px;
   margin-top: 16px;
 }
+
+/* Disposition d’accueil */
 .accueil-flex {
   display: flex;
   flex-wrap: wrap;
@@ -19,17 +45,17 @@ body {
   align-items: flex-start;
   margin-bottom: 40px;
 }
-.accueil-gauche {
+.accueil-gauche, .accueil-droite {
   flex: 1 1 350px;
   min-width: 300px;
 }
 .accueil-droite {
-  flex: 1 1 350px;
-  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Image d’accueil */
 .img-accueil {
   width: 100%;
   max-width: 420px;
@@ -37,9 +63,11 @@ body {
   box-shadow: 0 4px 24px #0001;
   margin-bottom: 12px;
 }
+
+/* Encadré “saviez-vous” */
 .encadre-saviez-vous {
-  background: #e6f4ea;
-  color: #1a3d2b;
+  background: var(--green-light);
+  color: var(--text-dark);
   border-radius: 12px;
   padding: 12px 18px;
   font-size: 1rem;
@@ -47,6 +75,8 @@ body {
   margin-top: -20px;
   max-width: 420px;
 }
+
+/* Boutons */
 .boutons-accueil {
   margin-top: 24px;
 }
@@ -60,23 +90,32 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 .btn-principal {
-  background: #217a3b;
+  background: var(--green-accent);
   color: #fff;
   border: none;
 }
 .btn-principal:hover {
-  background: #1a5e2a;
+  background: var(--green-accent-dark);
 }
 .btn-secondaire {
   background: #fff;
-  color: #217a3b;
-  border: 2px solid #217a3b;
+  color: var(--green-accent);
+  border: 2px solid var(--green-accent);
 }
 .btn-secondaire:hover {
-  background: #e6f4ea;
+  background: var(--green-light);
 }
+
+/* Sous-titre */
 .sous-titre {
   font-size: 1.2rem;
   color: #2e4d3a;
   margin-bottom: 0.5em;
+}
+
+/* Arrière-plan héros et header */
+.hero,
+.header,
+.hero .overlay {
+  background: #f5fdf6 !important;
 }

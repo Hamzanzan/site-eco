@@ -4,7 +4,7 @@ title = "Éco-Numérique"
 theme = "ananke"
 
 [params]
-  custom_css = ["css/custom.css"]
+  custom_css = ["/css/custom.css"]
   favicon = "images/logo.png"
   site_logo = "images/logo.png"
   background = "images/header.jpg"
