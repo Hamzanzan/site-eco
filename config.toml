@@ -9,6 +9,9 @@ theme = "ananke"
   site_logo = "images/logo.png"
   background = "images/header.jpg"
 
+[params.ananke]
+  show_recent_posts = false
+
 [menu]
   [[menu.main]]
     name = "Accueil"
@@ -26,3 +29,8 @@ theme = "ananke"
     name = "Stockage"
     url = "/stockage/"
     weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

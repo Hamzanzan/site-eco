@@ -1,36 +1,179 @@
-<div id="quiz">
+<div id="quiz" class="quiz-container">
   <form id="eco-quiz">
-    <p>1. Combien de CO2 émet en moyenne une recherche internet ?</p>
-    <input type="radio" name="q1" value="a"> a) 0,7g<br>
-    <input type="radio" name="q1" value="b"> b) 7g<br>
-    <input type="radio" name="q1" value="c"> c) 70g<br>
-
-    <p>2. Quel pourcentage des émissions mondiales de GES est dû au numérique ?</p>
-    <input type="radio" name="q2" value="a"> a) 1%<br>
-    <input type="radio" name="q2" value="b"> b) 4%<br>
-    <input type="radio" name="q2" value="c"> c) 10%<br>
-
-    <p>3. Quelle action a le plus d'impact pour réduire l'empreinte du numérique ?</p>
-    <input type="radio" name="q3" value="a"> a) Fermer les onglets inutiles<br>
-    <input type="radio" name="q3" value="b"> b) Garder son smartphone plus longtemps<br>
-    <input type="radio" name="q3" value="c"> c) Vider la corbeille<br>
-
-    <br>
-    <button type="button" onclick="checkQuiz()">Valider mes réponses</button>
+    <div class="quiz-question" data-answer="b" data-explanation="Une recherche internet émet en moyenne 7g de CO2.">
+      <p>1. Combien de CO2 émet en moyenne une recherche internet ?</p>
+      <label><input type="radio" name="q1" value="a"> a) 0,7g</label><br>
+      <label><input type="radio" name="q1" value="b"> b) 7g</label><br>
+      <label><input type="radio" name="q1" value="c"> c) 70g</label><br>
+    </div>
+    <div class="quiz-question" data-answer="b" data-explanation="Environ 4% des émissions mondiales de GES sont dues au numérique.">
+      <p>2. Quel pourcentage des émissions mondiales de GES est dû au numérique ?</p>
+      <label><input type="radio" name="q2" value="a"> a) 1%</label><br>
+      <label><input type="radio" name="q2" value="b"> b) 4%</label><br>
+      <label><input type="radio" name="q2" value="c"> c) 10%</label><br>
+    </div>
+    <div class="quiz-question" data-answer="b" data-explanation="Garder son smartphone plus longtemps a le plus d'impact.">
+      <p>3. Quelle action a le plus d'impact pour réduire l'empreinte du numérique ?</p>
+      <label><input type="radio" name="q3" value="a"> a) Fermer les onglets inutiles</label><br>
+      <label><input type="radio" name="q3" value="b"> b) Garder son smartphone plus longtemps</label><br>
+      <label><input type="radio" name="q3" value="c"> c) Vider la corbeille</label><br>
+    </div>
+    <div class="quiz-question" data-answer="a" data-explanation="Le streaming vidéo est l'un des usages les plus énergivores.">
+      <p>4. Quel usage numérique consomme le plus d'énergie ?</p>
+      <label><input type="radio" name="q4" value="a"> a) Streaming vidéo</label><br>
+      <label><input type="radio" name="q4" value="b"> b) Envoyer des emails</label><br>
+      <label><input type="radio" name="q4" value="c"> c) Naviguer sur des sites web</label><br>
+    </div>
+    <div class="quiz-progress">
+      <span id="quiz-progress-text">Question 1/4</span>
+      <progress id="quiz-progress-bar" value="1" max="4"></progress>
+      <div id="quiz-progress-percent">0%</div>
+    </div>
+    <button type="button" id="next-btn">Suivant</button>
+    <button type="button" id="retry-btn" style="display:none;">Recommencer</button>
+    <button type="button" id="review-btn" style="display:none;">Voir mes réponses</button>
   </form>
-  <div id="quiz-result"></div>
+  <div id="quiz-feedback"></div>
+  <div id="quiz-review" style="display:none;"></div>
 </div>
 
 <script>
-function checkQuiz() {
-  let score = 0;
-  if (document.querySelector('input[name="q1"]:checked')?.value === "b") score++;
-  if (document.querySelector('input[name="q2"]:checked')?.value === "b") score++;
-  if (document.querySelector('input[name="q3"]:checked')?.value === "b") score++;
-  let result = "Votre score : " + score + "/3<br>";
-  if (score === 3) result += "Bravo, vous êtes un(e) éco-expert !";
-  else if (score === 2) result += "Pas mal, continuez à vous informer !";
-  else result += "N'hésitez pas à explorer le site pour en apprendre plus.";
-  document.getElementById("quiz-result").innerHTML = result;
+const questions = document.querySelectorAll('.quiz-question');
+let current = 0;
+let score = 0;
+let answers = [];
+const nextBtn = document.getElementById('next-btn');
+const retryBtn = document.getElementById('retry-btn');
+const reviewBtn = document.getElementById('review-btn');
+const feedbackDiv = document.getElementById('quiz-feedback');
+const progressText = document.getElementById('quiz-progress-text');
+const progressBar = document.getElementById('quiz-progress-bar');
+const progressPercent = document.getElementById('quiz-progress-percent');
+const reviewDiv = document.getElementById('quiz-review');
+
+function animateTransition(from, to) {
+  from.classList.add('fade-out');
+  setTimeout(() => {
+    from.style.display = 'none';
+    to.style.display = 'block';
+    to.classList.add('fade-in');
+    setTimeout(() => to.classList.remove('fade-in'), 400);
+    from.classList.remove('fade-out');
+  }, 350);
 }
-</script> 
+
+function showQuestion(idx) {
+  questions.forEach((q, i) => {
+    if (i === idx) {
+      q.style.display = 'block';
+      q.classList.add('fade-in');
+      setTimeout(() => q.classList.remove('fade-in'), 400);
+    } else {
+      q.style.display = 'none';
+    }
+  });
+  progressText.textContent = `Question ${idx+1}/${questions.length}`;
+  progressBar.value = idx+1;
+  progressPercent.textContent = Math.round(((idx+1)/questions.length)*100) + '%';
+  nextBtn.textContent = idx === questions.length-1 ? 'Valider mes réponses' : 'Suivant';
+}
+
+function resetQuiz() {
+  current = 0;
+  score = 0;
+  answers = [];
+  feedbackDiv.innerHTML = '';
+  nextBtn.style.display = '';
+  retryBtn.style.display = 'none';
+  reviewBtn.style.display = 'none';
+  reviewDiv.style.display = 'none';
+  showQuestion(0);
+  document.querySelectorAll('input[type=radio]').forEach(i => i.checked = false);
+}
+
+nextBtn.onclick = function() {
+  const q = questions[current];
+  const selected = q.querySelector('input[type=radio]:checked');
+  if (!selected) {
+    feedbackDiv.innerHTML = '<div class="quiz-alert">Veuillez sélectionner une réponse.</div>';
+    return;
+  }
+  feedbackDiv.innerHTML = '';
+  answers[current] = selected.value;
+  // Show feedback for this question
+  const correct = selected.value === q.dataset.answer;
+  if (correct) score++;
+  q.querySelectorAll('label').forEach(label => {
+    const input = label.querySelector('input');
+    label.style.background = input.checked ? (correct ? '#d4edda' : '#f8d7da') : '';
+    label.style.fontWeight = input.checked ? 'bold' : '';
+  });
+  // Show explanation
+  feedbackDiv.innerHTML = `<div class="quiz-explanation">${correct ? '✅ Bonne réponse !' : '❌ Mauvaise réponse.'} <br><small>${q.dataset.explanation}</small></div>`;
+  setTimeout(() => {
+    feedbackDiv.innerHTML = '';
+    if (current < questions.length-1) {
+      animateTransition(q, questions[current+1]);
+      current++;
+      showQuestion(current);
+    } else {
+      showResult();
+    }
+  }, 1200);
+};
+
+function showResult() {
+  let msg = `<h3>Votre score : ${score}/${questions.length}</h3>`;
+  if (score === questions.length) msg += "Bravo, vous êtes un(e) éco-expert !";
+  else if (score >= questions.length-1) msg += "Très bien, continuez à vous informer !";
+  else msg += "N'hésitez pas à explorer le site pour en apprendre plus.";
+  feedbackDiv.innerHTML = `<div class='quiz-result-final'>${msg}</div>`;
+  nextBtn.style.display = 'none';
+  retryBtn.style.display = '';
+  reviewBtn.style.display = '';
+}
+
+retryBtn.onclick = resetQuiz;
+
+reviewBtn.onclick = function() {
+  let html = `<h3>Vos réponses et corrections :</h3><ul class='quiz-review-list'>`;
+  questions.forEach((q, i) => {
+    const user = answers[i] || '(aucune réponse)';
+    const correct = q.dataset.answer;
+    const explanation = q.dataset.explanation;
+    html += `<li><strong>Q${i+1}:</strong> ${q.querySelector('p').textContent}<br>Votre réponse : <span class='${user===correct?'good':'bad'}'>${user}</span> <br>Bonne réponse : <span class='good'>${correct}</span><br><small>${explanation}</small></li>`;
+  });
+  html += '</ul>';
+  reviewDiv.innerHTML = html;
+  reviewDiv.style.display = 'block';
+};
+
+// Init
+showQuestion(0);
+retryBtn.style.display = 'none';
+reviewBtn.style.display = 'none';
+</script>
+
+<style>
+.quiz-container { max-width: 540px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 16px #0001; padding: 2rem; }
+.quiz-question { display: none; margin-bottom: 1.5rem; transition: opacity 0.35s; }
+.quiz-question.fade-in { animation: fadeIn 0.4s; }
+.quiz-question.fade-out { animation: fadeOut 0.35s; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: none;} }
+@keyframes fadeOut { from { opacity: 1;} to { opacity: 0; } }
+.quiz-question p { font-weight: 600; }
+.quiz-question label { display: block; margin: 0.5rem 0; padding: 0.3rem 0.7rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+.quiz-progress { margin: 1rem 0; text-align: center; }
+#quiz-progress-percent { font-size: 1.1em; margin-top: 0.3em; color: #3498db; font-weight: 600; }
+.quiz-alert { color: #c0392b; margin-bottom: 1rem; }
+.quiz-explanation { background: #f1f8e9; border-left: 4px solid #2ecc71; padding: 0.7rem 1rem; border-radius: 6px; margin-bottom: 1rem; }
+.quiz-result-final { background: #e3f2fd; border-left: 4px solid #3498db; padding: 1rem 1.5rem; border-radius: 8px; text-align: center; font-size: 1.2rem; }
+.quiz-review-list { list-style: none; padding: 0; }
+.quiz-review-list li { margin-bottom: 1.2em; background: #f8f9fa; border-radius: 8px; padding: 1em; }
+.quiz-review-list .good { color: #2ecc71; font-weight: bold; }
+.quiz-review-list .bad { color: #e74c3c; font-weight: bold; }
+#next-btn, #retry-btn, #review-btn { background: #2ecc71; color: #fff; border: none; border-radius: 6px; padding: 0.7rem 1.5rem; font-weight: 600; margin: 1rem 0.5rem 0 0; cursor: pointer; transition: background 0.2s; }
+#next-btn:hover, #retry-btn:hover, #review-btn:hover { background: #27ae60; }
+progress { width: 100%; height: 18px; border-radius: 8px; }
+@media (max-width: 600px) { .quiz-container { padding: 1rem; } }
+</style> 
