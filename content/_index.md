@@ -1,13 +1,20 @@
 ---
-title: "Éco-Numérique"
+title: Éco-Numérique
 ---
-
 <!-- Sensibilisation Bandeau -->
+
+
+
+"﻿Salut, voici les changements que j'effectue, via le visuel studio, j'espère que ça va marcher."
+
+
+
 <div class="bandeau-sensibilisation">
   <span>🌱 Sensibilisation Numérique</span>
 </div>
 
 <!-- Accueil Section -->
+
 <div class="accueil-flex">
   <div class="accueil-gauche">
     <h1>Comprendre l'Impact du Numérique</h1>
@@ -30,6 +37,7 @@ title: "Éco-Numérique"
 </div>
 
 <!-- Ressources Bandeau -->
+
 <div class="bandeau-ressources">
   <span>📚 Nos ressources</span>
 </div>
@@ -40,6 +48,7 @@ title: "Éco-Numérique"
 </p>
 
 <!-- Statistiques -->
+
 <div class="stats-container fade-in-up">
   <div class="stat-card">
     <h3>4%</h3>
@@ -56,6 +65,7 @@ title: "Éco-Numérique"
 </div>
 
 <!-- Thèmes principaux -->
+
 <div class="themes-principaux fade-in-up">
   <h2>Thèmes Principaux</h2>
   <div class="themes-grid">
@@ -78,6 +88,7 @@ title: "Éco-Numérique"
 </div>
 
 <!-- Ressources complémentaires -->
+
 <div class="ressources-principales fade-in-up">
   <h2>Ressources à découvrir</h2>
   <div class="themes-grid">
@@ -105,6 +116,7 @@ title: "Éco-Numérique"
 </div>
 
 <!-- Call to Action -->
+
 <div class="cta-section fade-in-up">
   <h2>Passez à l'action !</h2>
   <p>Rejoignez notre communauté et commencez votre voyage vers un numérique plus responsable.</p>
@@ -115,6 +127,7 @@ title: "Éco-Numérique"
 </div>
 
 <!-- Newsletter -->
+
 <div class="newsletter-section fade-in-up">
   <h2>Restez informé</h2>
   <p>Recevez nos conseils et actualités sur l'éco-numérique directement dans votre boîte mail.</p>
@@ -125,6 +138,7 @@ title: "Éco-Numérique"
 </div>
 
 <!-- Footer -->
+
 <footer class="site-footer">
   <div>
     <strong>🌱 Le numérique responsable</strong> — Pour un web plus vert.<br>
@@ -136,6 +150,7 @@ title: "Éco-Numérique"
 </footer>
 
 <!-- Fade-in Animation Script -->
+
 <script>
 function onScrollFadeIn() {
   document.querySelectorAll('.fade-in-up').forEach(el => {
