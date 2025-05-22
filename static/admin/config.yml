@@ -40,7 +40,6 @@ collections:
   - name: "home"
     label: "Home Page"
     file: "content/_index.md"
-    name: "home"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string"}
@@ -51,7 +50,6 @@ collections:
     files:
       - file: "config.toml"
         label: "Site Configuration"
-        name: "config"
         fields:
           - {label: "Site Title", name: "title", widget: "string"}
           - {label: "Base URL", name: "baseURL", widget: "string"}

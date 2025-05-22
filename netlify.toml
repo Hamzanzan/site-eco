@@ -47,3 +47,5 @@
 [visual-editing]
   enabled = true
   configFile = "netlify/visual-editing.json"
+  preview = true
+  previewUrl = "https://numeriqueresponsable.netlify.app"

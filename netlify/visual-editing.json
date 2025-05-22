@@ -9,17 +9,6 @@
           "type": "string",
           "required": true
         },
-        "layout": {
-          "type": "string",
-          "default": "single"
-        },
-        "date": {
-          "type": "date"
-        },
-        "draft": {
-          "type": "boolean",
-          "default": false
-        },
         "body": {
           "type": "markdown"
         }
@@ -32,47 +21,21 @@
           "type": "string",
           "required": true
         },
-        "layout": {
-          "type": "string",
-          "default": "single"
-        },
-        "date": {
-          "type": "date"
-        },
-        "draft": {
-          "type": "boolean",
-          "default": false
-        },
-        "thumbnail": {
-          "type": "image",
-          "required": false
-        },
-        "body": {
-          "type": "markdown"
-        }
-      }
-    },
-    "home": {
-      "path": "content",
-      "file": "_index.md",
-      "fields": {
-        "title": {
-          "type": "string",
-          "required": true
-        },
-        "layout": {
-          "type": "string",
-          "default": "home"
-        },
         "body": {
           "type": "markdown"
         }
       }
     }
   },
-  "assets": {
-    "images": {
-      "path": "static/images"
-    }
+  "preview": {
+    "enabled": true,
+    "url": "https://numeriqueresponsable.netlify.app"
+  },
+  "permissions": {
+    "create": ["admin", "editor"],
+    "read": ["admin", "editor"],
+    "update": ["admin", "editor"],
+    "delete": ["admin"],
+    "publish": ["admin", "editor"]
   }
 } 
