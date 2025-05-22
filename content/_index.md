@@ -2,10 +2,12 @@
 title: "Éco-Numérique"
 ---
 
+<!-- Sensibilisation Bandeau -->
 <div class="bandeau-sensibilisation">
   <span>🌱 Sensibilisation Numérique</span>
 </div>
 
+<!-- Accueil Section -->
 <div class="accueil-flex">
   <div class="accueil-gauche">
     <h1>Comprendre l'Impact du Numérique</h1>
@@ -27,8 +29,7 @@ title: "Éco-Numérique"
   </div>
 </div>
 
----
-
+<!-- Ressources Bandeau -->
 <div class="bandeau-ressources">
   <span>📚 Nos ressources</span>
 </div>
@@ -38,6 +39,7 @@ title: "Éco-Numérique"
   Nous proposons un ensemble d'outils et de ressources pour comprendre et réduire votre empreinte.
 </p>
 
+<!-- Statistiques -->
 <div class="stats-container fade-in-up">
   <div class="stat-card">
     <h3>4%</h3>
@@ -53,6 +55,7 @@ title: "Éco-Numérique"
   </div>
 </div>
 
+<!-- Thèmes principaux -->
 <div class="themes-principaux fade-in-up">
   <h2>Thèmes Principaux</h2>
   <div class="themes-grid">
@@ -74,6 +77,7 @@ title: "Éco-Numérique"
   </div>
 </div>
 
+<!-- Ressources complémentaires -->
 <div class="ressources-principales fade-in-up">
   <h2>Ressources à découvrir</h2>
   <div class="themes-grid">
@@ -100,6 +104,7 @@ title: "Éco-Numérique"
   </div>
 </div>
 
+<!-- Call to Action -->
 <div class="cta-section fade-in-up">
   <h2>Passez à l'action !</h2>
   <p>Rejoignez notre communauté et commencez votre voyage vers un numérique plus responsable.</p>
@@ -109,6 +114,7 @@ title: "Éco-Numérique"
   </div>
 </div>
 
+<!-- Newsletter -->
 <div class="newsletter-section fade-in-up">
   <h2>Restez informé</h2>
   <p>Recevez nos conseils et actualités sur l'éco-numérique directement dans votre boîte mail.</p>
@@ -118,6 +124,7 @@ title: "Éco-Numérique"
   </form>
 </div>
 
+<!-- Footer -->
 <footer class="site-footer">
   <div>
     <strong>🌱 Le numérique responsable</strong> — Pour un web plus vert.<br>
@@ -128,8 +135,8 @@ title: "Éco-Numérique"
   </div>
 </footer>
 
+<!-- Fade-in Animation Script -->
 <script>
-// Fade-in on scroll for .fade-in-up elements
 function onScrollFadeIn() {
   document.querySelectorAll('.fade-in-up').forEach(el => {
     const rect = el.getBoundingClientRect();

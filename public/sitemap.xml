@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:59982/articles/</loc>
+    <loc>http://localhost:1313/articles/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/calculateur/</loc>
+    <loc>http://localhost:1313/calculateur/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/cloud/</loc>
+    <loc>http://localhost:1313/articles/cloud/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/ecoconception/</loc>
+    <loc>http://localhost:1313/articles/ecoconception/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/ecoindex/</loc>
+    <loc>http://localhost:1313/articles/ecoindex/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/hebergeurs-verts/</loc>
+    <loc>http://localhost:1313/articles/hebergeurs-verts/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/equipements/</loc>
+    <loc>http://localhost:1313/articles/equipements/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/recyclage/</loc>
+    <loc>http://localhost:1313/articles/recyclage/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/articles/usage/</loc>
+    <loc>http://localhost:1313/articles/usage/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59982/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:59982/impacts/</loc>
+    <loc>http://localhost:1313/impacts/</loc>
   </url><url>
-    <loc>http://localhost:59982/quiz/</loc>
+    <loc>http://localhost:1313/quiz/</loc>
   </url><url>
-    <loc>http://localhost:59982/stockage/</loc>
+    <loc>http://localhost:1313/stockage/</loc>
   </url><url>
-    <loc>http://localhost:59982/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

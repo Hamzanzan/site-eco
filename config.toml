@@ -1,6 +1,6 @@
 baseURL = "https://monsite-eco.fr/"
 languageCode = "fr-fr"
-title = "Éco-Numérique"
+title = "Le Numérique Responsable"
 theme = "ananke"
 
 [params]
