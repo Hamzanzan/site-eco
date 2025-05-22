@@ -7,6 +7,10 @@ local_backend: true
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
+# Ajout des styles personnalisés
+styles:
+  - cms.css
+
 collections:
   - name: "pages"
     label: "Pages"
