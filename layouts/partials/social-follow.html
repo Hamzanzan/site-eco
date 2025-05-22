@@ -1,0 +1,9 @@
+{{ if .Site.Params.social }}
+<div class="flex justify-end">
+  {{ range .Site.Params.social }}
+  <a href="{{ .url }}" class="f4 fw4 hover-white no-underline white-70 pv2 ph3">
+    {{ .name }}
+  </a>
+  {{ end }}
+</div>
+{{ end }} 

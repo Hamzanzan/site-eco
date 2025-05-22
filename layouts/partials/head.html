@@ -1,0 +1,25 @@
+{{ if .Site.Params.custom_css }}
+  {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+  {{ end }}
+{{ end }}
+
+<link rel="stylesheet" href="/css/main.css">
+
+{{ if .Site.Params.favicon }}
+  <link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
+{{ end }}
+
+{{ if .Site.Params.site_logo }}
+  <link rel="logo" href="{{ .Site.Params.site_logo | relURL }}">
+{{ end }}
+
+{{ if .Site.Params.background }}
+  <style>
+    body {
+      background-image: url('{{ .Site.Params.background | relURL }}');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+{{ end }} 
