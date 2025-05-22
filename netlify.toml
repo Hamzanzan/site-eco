@@ -8,6 +8,8 @@
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
   NODE_VERSION = "18"
+  NETLIFY_USE_YARN = "true"
+  NETLIFY_DEV = "true"
 
 [[redirects]]
   from = "/admin/*"
@@ -35,3 +37,13 @@
   allowedRoles = ["admin", "editor"]
   allowedUsers = ["*"]
   configFile = "netlify/create.config.js"
+
+# Configuration Git Gateway
+[git]
+  gateway = true
+  branch = "main"
+
+# Configuration pour l'édition visuelle
+[visual-editing]
+  enabled = true
+  configFile = "netlify/visual-editing.json"

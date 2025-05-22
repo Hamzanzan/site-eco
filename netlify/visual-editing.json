@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "siteId": "numeriqueresponsable.netlify.app",
+  "contentTypes": {
+    "pages": {
+      "path": "content",
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "layout": {
+          "type": "string",
+          "default": "single"
+        },
+        "date": {
+          "type": "date"
+        },
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
+        "body": {
+          "type": "markdown"
+        }
+      }
+    },
+    "articles": {
+      "path": "content/articles",
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "layout": {
+          "type": "string",
+          "default": "single"
+        },
+        "date": {
+          "type": "date"
+        },
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
+        "thumbnail": {
+          "type": "image",
+          "required": false
+        },
+        "body": {
+          "type": "markdown"
+        }
+      }
+    },
+    "home": {
+      "path": "content",
+      "file": "_index.md",
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "layout": {
+          "type": "string",
+          "default": "home"
+        },
+        "body": {
+          "type": "markdown"
+        }
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "path": "static/images"
+    }
+  }
+} 

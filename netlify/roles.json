@@ -2,24 +2,12 @@
   "roles": [
     {
       "name": "admin",
-      "permissions": [
-        "create",
-        "read",
-        "update",
-        "delete",
-        "publish",
-        "manage"
-      ]
+      "permissions": ["*"]
     },
     {
       "name": "editor",
-      "permissions": [
-        "create",
-        "read",
-        "update",
-        "publish"
-      ]
+      "permissions": ["*"]
     }
   ],
-  "defaultRole": "editor"
+  "defaultRole": "admin"
 } 
