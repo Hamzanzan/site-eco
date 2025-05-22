@@ -25,3 +25,12 @@
   targetPort = 1313
   publish = "public"
   autoLaunch = true
+
+# Configuration pour Netlify Studio
+[studio]
+  enabled = true
+  baseDir = "."
+  buildCommand = "hugo --minify"
+  publishDir = "public"
+  allowedRoles = ["admin", "editor"]
+  allowedUsers = ["*"]

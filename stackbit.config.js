@@ -18,8 +18,13 @@ export default {
             { name: 'layout', type: 'string', default: 'single' },
             { name: 'date', type: 'date' },
             { name: 'draft', type: 'boolean', default: false },
-            { name: 'body', type: 'markdown' }
-          ]
+            { name: 'body', type: 'markdown' },
+          ],
+          permissions: {
+            create: true,
+            update: true,
+            delete: true
+          }
         },
         article: {
           type: 'page',
@@ -32,7 +37,12 @@ export default {
             { name: 'draft', type: 'boolean', default: false },
             { name: 'thumbnail', type: 'image' },
             { name: 'body', type: 'markdown' }
-          ]
+          ],
+          permissions: {
+            create: true,
+            update: true,
+            delete: true
+          }
         },
         home: {
           type: 'page',
@@ -42,7 +52,12 @@ export default {
             { name: 'title', type: 'string', required: true },
             { name: 'layout', type: 'string', default: 'home' },
             { name: 'body', type: 'markdown' }
-          ]
+          ],
+          permissions: {
+            create: true,
+            update: true,
+            delete: true
+          }
         }
       }
     })
@@ -50,7 +65,12 @@ export default {
   assetSources: [
     {
       name: 'images',
-      path: 'static/images'
+      path: 'static/images',
+      permissions: {
+        create: true,
+        update: true,
+        delete: true
+      }
     }
   ],
   presetSource: {
