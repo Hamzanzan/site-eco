@@ -1,6 +1,12 @@
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: '[skip ci] Upload "{{path}}"'
+    deleteMedia: '[skip ci] Delete "{{path}}"'
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
@@ -27,4 +33,16 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Content", name: "body", widget: "markdown"} 
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  - name: "config"
+    label: "Configuration"
+    files:
+      - file: "config.toml"
+        label: "Site Configuration"
+        name: "config"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Base URL", name: "baseURL", widget: "string"}
+          - {label: "Language Code", name: "languageCode", widget: "string"}
+          - {label: "Theme", name: "theme", widget: "string"} 

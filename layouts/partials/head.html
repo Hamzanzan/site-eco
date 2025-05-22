@@ -16,10 +16,8 @@
 
 {{ if .Site.Params.background }}
   <style>
-    body {
+    .cover {
       background-image: url('{{ .Site.Params.background | relURL }}');
-      background-size: cover;
-      background-position: center;
     }
   </style>
 {{ end }} 
