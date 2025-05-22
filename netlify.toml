@@ -26,11 +26,12 @@
   publish = "public"
   autoLaunch = true
 
-# Configuration pour Netlify Studio
-[studio]
+# Configuration pour Netlify Create
+[create]
   enabled = true
   baseDir = "."
   buildCommand = "hugo --minify"
   publishDir = "public"
   allowedRoles = ["admin", "editor"]
   allowedUsers = ["*"]
+  configFile = "netlify/create.config.js"

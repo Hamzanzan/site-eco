@@ -1,0 +1,25 @@
+{
+  "roles": [
+    {
+      "name": "admin",
+      "permissions": [
+        "create",
+        "read",
+        "update",
+        "delete",
+        "publish",
+        "manage"
+      ]
+    },
+    {
+      "name": "editor",
+      "permissions": [
+        "create",
+        "read",
+        "update",
+        "publish"
+      ]
+    }
+  ],
+  "defaultRole": "editor"
+} 
