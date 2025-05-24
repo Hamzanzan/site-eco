@@ -14,13 +14,17 @@ title = "Le Numérique Responsable"
     target = "layouts"
   [[module.imports]]
     path = "github.com/theNewDynamic/gohugo-theme-ananke"
-    version = "master"
+    version = "v0.0.0-20241018002841-8e1a6dc21313"
 
 [params]
   custom_css = ["/css/custom.css"]
   favicon = "images/logo.png"
   site_logo = "images/logo.png"
   background = "images/header.jpg"
+  [params.social]
+    twitter = "https://twitter.com/numeriqueresponsable"
+    github = "https://github.com/numeriqueresponsable"
+    linkedin = "https://linkedin.com/company/numeriqueresponsable"
 
 [params.ananke]
   show_recent_posts = false

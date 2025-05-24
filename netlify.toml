@@ -11,7 +11,7 @@
   NODE_VERSION = "18"
   NETLIFY_USE_YARN = "true"
   NETLIFY_DEV = "true"
-  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke master"
+  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018002841-8e1a6dc21313"
 
 [[redirects]]
   from = "/admin/*"
@@ -35,28 +35,28 @@
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
   GO_VERSION = "1.21.0"
-  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke master"
+  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018002841-8e1a6dc21313"
 
 [context.production.environment]
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
   GO_VERSION = "1.21.0"
-  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke master"
+  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018002841-8e1a6dc21313"
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
   GO_VERSION = "1.21.0"
-  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke master"
+  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018002841-8e1a6dc21313"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
   GO_VERSION = "1.21.0"
-  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke master"
+  HUGO_MODULE_REPLACEMENTS = "github.com/theNewDynamic/gohugo-theme-ananke -> github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018002841-8e1a6dc21313"
 
 # Configuration pour Netlify Create
 [create]
