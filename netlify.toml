@@ -7,6 +7,7 @@
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+  GO_VERSION = "1.21.0"
   NODE_VERSION = "18"
   NETLIFY_USE_YARN = "true"
   NETLIFY_DEV = "true"
@@ -32,21 +33,25 @@
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
+  GO_VERSION = "1.21.0"
 
 [context.production.environment]
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+  GO_VERSION = "1.21.0"
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
+  GO_VERSION = "1.21.0"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
+  GO_VERSION = "1.21.0"
 
 # Configuration pour Netlify Create
 [create]
