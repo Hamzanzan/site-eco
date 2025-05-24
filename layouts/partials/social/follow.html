@@ -1,19 +1,13 @@
-{{ if .Site.Params.social }}
-<div class="flex justify-end">
-  {{ with .Site.Params.social.twitter }}
-  <a href="{{ . }}" class="f4 fw4 hover-white no-underline white-70 pv2 ph3">
-    Twitter
-  </a>
-  {{ end }}
-  {{ with .Site.Params.social.github }}
-  <a href="{{ . }}" class="f4 fw4 hover-white no-underline white-70 pv2 ph3">
-    GitHub
-  </a>
-  {{ end }}
-  {{ with .Site.Params.social.linkedin }}
-  <a href="{{ . }}" class="f4 fw4 hover-white no-underline white-70 pv2 ph3">
-    LinkedIn
-  </a>
-  {{ end }}
-</div>
-{{ end }} 
+<!-- Social links disabled --> 
+
+[params.ananke.social]
+  icon_path = "ananke/socials/%s.svg"
+
+  [params.ananke.social.follow]
+    new_window_icon = false
+    networks = []
+
+  [params.ananke.social.share]
+    icons = true
+    sharetext = true
+    networks = [] 
