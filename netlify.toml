@@ -4,7 +4,7 @@
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ./"
 
 [build.environment]
-  HUGO_VERSION = "0.145.0"
+  HUGO_VERSION = "0.110.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
   NODE_VERSION = "18"
@@ -13,7 +13,7 @@
 
 [[redirects]]
   from = "/admin/*"
-  to = "/admin/index.html"
+  to = "/.netlify/functions/admin/:splat"
   status = 200
 
 [[redirects]]
@@ -27,6 +27,26 @@
   targetPort = 1313
   publish = "public"
   autoLaunch = true
+
+[dev.environment]
+  HUGO_VERSION = "0.110.0"
+  HUGO_ENV = "development"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_VERSION = "0.110.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.110.0"
+  HUGO_ENV = "development"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.110.0"
+  HUGO_ENV = "development"
+  HUGO_ENABLEGITINFO = "true"
 
 # Configuration pour Netlify Create
 [create]

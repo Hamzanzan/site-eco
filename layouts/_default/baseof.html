@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "head.html" . }}
+    <!-- Netlify Visual Editor -->
+    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
+    <script>
+      window.netlifyVisualEditor = {
+        siteId: '{{ .Site.Params.netlify.site_id }}',
+        collections: {{ .Site.Params.netlify.collections | jsonify }}
+      };
+    </script>
   </head>
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
     <header class="cover bg-top" style="background-image: url('{{ .Site.Params.background | relURL }}');">
@@ -39,6 +47,7 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+    <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
@@ -47,6 +56,17 @@
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
             });
+          }
+        });
+      }
+    </script>
+    <!-- Netlify Visual Editor Initialization -->
+    <script>
+      if (window.netlifyVisualEditor) {
+        window.netlifyVisualEditor.init({
+          onSave: function(data) {
+            // Handle save event
+            console.log('Content saved:', data);
           }
         });
       }

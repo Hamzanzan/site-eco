@@ -34,3 +34,13 @@ theme = "ananke"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Configuration Netlify Visual Editor
+[params.netlify]
+  visual_editor = true
+  site_id = "numeriqueresponsable"
+
+[params.netlify.collections]
+  pages = { path = "content", file = "{slug}.md" }
+  articles = { path = "content/articles", file = "{slug}.md" }
+  home = { path = "content", file = "_index.md" }
