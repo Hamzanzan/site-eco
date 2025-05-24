@@ -27,16 +27,14 @@
     }
   </style>
  
-    
-    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
-    <script>
-      window.netlifyVisualEditor = {
-        siteId: 'numeriqueresponsable',
-        collections: "{\"articles\":{\"file\":\"{slug}.md\",\"path\":\"content/articles\"},\"home\":{\"file\":\"_index.md\",\"path\":\"content\"},\"pages\":{\"file\":\"{slug}.md\",\"path\":\"content\"}}"
-      };
-    </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="ma0 avenir bg-near-white">
+  <body class="ma0 avenir bg-near-white"
+  
+    data-netlify-collections='{&#34;articles&#34;:{&#34;file&#34;:&#34;{slug}.md&#34;,&#34;path&#34;:&#34;content/articles&#34;},&#34;home&#34;:{&#34;file&#34;:&#34;_index.md&#34;,&#34;path&#34;:&#34;content&#34;},&#34;pages&#34;:{&#34;file&#34;:&#34;{slug}.md&#34;,&#34;path&#34;:&#34;content&#34;}}'
+    data-netlify-site-id='numeriqueresponsable'
+  
+  >
     <header class="cover bg-top" style="background-image: url('/images/header.jpg');">
       <div class="bg-black-60">
         <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -83,23 +81,17 @@
     </header>
     <main class="pb7" role="main">
       
-  
-  
-  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Articles
-      </aside> <h1 class="f1 athelas mt3 mb1">Recycler ses équipements numériques</h1>
+      
+      <h1 class="f1 athelas mt3 mb1">Recycler ses équipements numériques</h1>
       
       
-      
-      <time class="f6 mv4 dib tracked" datetime="2024-06-01T00:00:00Z">June 1, 2024</time>
-      
-
+        <time class="f6 mv4 dib tracked" datetime="2024-06-01T00:00:00Z">1 June 2024</time>
       
       
     </header>
+
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="recycler-ses-équipements-numériques">Recycler ses équipements numériques</h1>
 <p>Recycler ses appareils électroniques est essentiel pour limiter la pollution et préserver les ressources naturelles.</p>
 <h2 id="pourquoi-recycler-">Pourquoi recycler ?</h2>
@@ -125,11 +117,7 @@
 </div> <ul class="pa0">
   
 </ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
+</div>
 
     <aside class="w-30-l mt6-l">
 
@@ -137,7 +125,6 @@
 
 
 </aside>
-
   </article>
 
     </main>
@@ -149,7 +136,6 @@
   </div>
 </footer> 
     
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
@@ -162,9 +148,16 @@
       }
     </script>
     
+    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
     <script>
       if (window.netlifyVisualEditor) {
+        const netlifyCollectionsString = '{\u0022articles\u0022:{\u0022file\u0022:\u0022{slug}.md\u0022,\u0022path\u0022:\u0022content\/articles\u0022},\u0022home\u0022:{\u0022file\u0022:\u0022_index.md\u0022,\u0022path\u0022:\u0022content\u0022},\u0022pages\u0022:{\u0022file\u0022:\u0022{slug}.md\u0022,\u0022path\u0022:\u0022content\u0022}}';
+        const netlifyCollections = JSON.parse(netlifyCollectionsString);
+        const netlifySiteId = 'numeriqueresponsable';
+
         window.netlifyVisualEditor.init({
+          siteId: netlifySiteId,
+          collections: netlifyCollections,
           onSave: function(data) {
             
             console.log('Content saved:', data);

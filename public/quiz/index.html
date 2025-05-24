@@ -27,16 +27,14 @@
     }
   </style>
  
-    
-    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
-    <script>
-      window.netlifyVisualEditor = {
-        siteId: 'numeriqueresponsable',
-        collections: "{\"articles\":{\"file\":\"{slug}.md\",\"path\":\"content/articles\"},\"home\":{\"file\":\"_index.md\",\"path\":\"content\"},\"pages\":{\"file\":\"{slug}.md\",\"path\":\"content\"}}"
-      };
-    </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="ma0 avenir bg-near-white">
+  <body class="ma0 avenir bg-near-white"
+  
+    data-netlify-collections='{&#34;articles&#34;:{&#34;file&#34;:&#34;{slug}.md&#34;,&#34;path&#34;:&#34;content/articles&#34;},&#34;home&#34;:{&#34;file&#34;:&#34;_index.md&#34;,&#34;path&#34;:&#34;content&#34;},&#34;pages&#34;:{&#34;file&#34;:&#34;{slug}.md&#34;,&#34;path&#34;:&#34;content&#34;}}'
+    data-netlify-site-id='numeriqueresponsable'
+  
+  >
     <header class="cover bg-top" style="background-image: url('/images/header.jpg');">
       <div class="bg-black-60">
         <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -83,15 +81,16 @@
     </header>
     <main class="pb7" role="main">
       
-  <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
-      <header>
-        <h1 class="f1">
-          Quiz
-        </h1>
-      </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
-        <h2 id="testez-vos-connaissances-sur-lécologie-numérique">Testez vos connaissances sur l’écologie numérique</h2>
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      
+      <h1 class="f1 athelas mt3 mb1">Quiz</h1>
+      
+      
+      
+    </header>
+
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="testez-vos-connaissances-sur-lécologie-numérique">Testez vos connaissances sur l’écologie numérique</h2>
 <div id="quiz" class="quiz-container">
   <form id="eco-quiz">
     <div class="quiz-question" data-answer="b" data-explanation="Une recherche internet émet en moyenne 7g de CO2.">
@@ -271,10 +270,18 @@ reviewBtn.style.display = 'none';
 progress { width: 100%; height: 18px; border-radius: 8px; }
 @media (max-width: 600px) { .quiz-container { padding: 1rem; } }
 </style> 
+<ul class="pa0">
+  
+</ul>
+</div>
 
-      </div>
-    </article>
-  </div>
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+  </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
@@ -285,7 +292,6 @@ progress { width: 100%; height: 18px; border-radius: 8px; }
   </div>
 </footer> 
     
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
@@ -298,9 +304,16 @@ progress { width: 100%; height: 18px; border-radius: 8px; }
       }
     </script>
     
+    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
     <script>
       if (window.netlifyVisualEditor) {
+        const netlifyCollectionsString = '{\u0022articles\u0022:{\u0022file\u0022:\u0022{slug}.md\u0022,\u0022path\u0022:\u0022content\/articles\u0022},\u0022home\u0022:{\u0022file\u0022:\u0022_index.md\u0022,\u0022path\u0022:\u0022content\u0022},\u0022pages\u0022:{\u0022file\u0022:\u0022{slug}.md\u0022,\u0022path\u0022:\u0022content\u0022}}';
+        const netlifyCollections = JSON.parse(netlifyCollectionsString);
+        const netlifySiteId = 'numeriqueresponsable';
+
         window.netlifyVisualEditor.init({
+          siteId: netlifySiteId,
+          collections: netlifyCollections,
           onSave: function(data) {
             
             console.log('Content saved:', data);

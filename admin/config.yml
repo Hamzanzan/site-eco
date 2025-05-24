@@ -45,10 +45,12 @@ collections:
 
   - name: "home"
     label: "Page d'accueil"
-    file: "content/_index.md"
-    name: "home"
-    fields:
-      - {label: "Titre", name: "title", widget: "string", required: true}
-      - {label: "Description", name: "description", widget: "text", required: true}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Contenu", name: "body", widget: "markdown", required: true}
+    files:
+      - name: "index"
+        label: "Accueil"
+        file: "content/_index.md"
+        fields:
+          - {label: "Titre", name: "title", widget: "string", required: true}
+          - {label: "Description", name: "description", widget: "text", required: true}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown", required: true}
