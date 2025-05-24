@@ -22,13 +22,19 @@
 
 
   <style>
-    body {
+    .cover {
       background-image: url('/images/header.jpg');
-      background-size: cover;
-      background-position: center;
     }
   </style>
  
+    
+    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
+    <script>
+      window.netlifyVisualEditor = {
+        siteId: 'numeriqueresponsable',
+        collections: "{\"articles\":{\"file\":\"{slug}.md\",\"path\":\"content/articles\"},\"home\":{\"file\":\"_index.md\",\"path\":\"content\"},\"pages\":{\"file\":\"{slug}.md\",\"path\":\"content\"}}"
+      };
+    </script>
   </head>
   <body class="ma0 avenir bg-near-white">
     <header class="cover bg-top" style="background-image: url('/images/header.jpg');">
@@ -92,6 +98,7 @@
     <div> </div>
   </div>
 </footer> 
+    
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
@@ -100,6 +107,17 @@
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
             });
+          }
+        });
+      }
+    </script>
+    
+    <script>
+      if (window.netlifyVisualEditor) {
+        window.netlifyVisualEditor.init({
+          onSave: function(data) {
+            
+            console.log('Content saved:', data);
           }
         });
       }

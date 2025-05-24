@@ -2,20 +2,27 @@ backend:
   name: git-gateway
   branch: main
 
+local_backend: true
+
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+
+# Ajout des styles personnalisés
+styles:
+  - cms.css
 
 collections:
   - name: "pages"
     label: "Pages"
-    files:
-      - file: "content/_index.md"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Content", name: "body", widget: "markdown"}
+    folder: "content"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "articles"
     label: "Articles"
@@ -26,5 +33,25 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Content", name: "body", widget: "markdown"} 
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "home"
+    label: "Home Page"
+    file: "content/_index.md"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "config"
+    label: "Configuration"
+    files:
+      - file: "config.toml"
+        label: "Site Configuration"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Base URL", name: "baseURL", widget: "string"}
+          - {label: "Language Code", name: "languageCode", widget: "string"}
+          - {label: "Theme", name: "theme", widget: "string"} 

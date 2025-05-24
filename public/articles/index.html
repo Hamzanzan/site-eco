@@ -22,68 +22,94 @@
 
 
   <style>
-    body {
+    .cover {
       background-image: url('/images/header.jpg');
-      background-size: cover;
-      background-position: center;
     }
   </style>
  
+    
+    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
+    <script>
+      window.netlifyVisualEditor = {
+        siteId: 'numeriqueresponsable',
+        collections: "{\"articles\":{\"file\":\"{slug}.md\",\"path\":\"content/articles\"},\"home\":{\"file\":\"_index.md\",\"path\":\"content\"},\"pages\":{\"file\":\"{slug}.md\",\"path\":\"content\"}}"
+      };
+    </script>
   </head>
   <body class="ma0 avenir bg-near-white">
     <header class="cover bg-top" style="background-image: url('/images/header.jpg');">
-  <div class="bg-black-60">
-    <nav class="pv3 ph3 ph4-ns" role="navigation">
-      <div class="flex-l justify-between items-center center">
-        <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-          
-            <img src="/images/logo.png" class="w100 mw5-ns" alt="Le Numérique Responsable" />
-          
-        </a>
-        <div class="flex-l items-center">
-          
-            <ul class="pl0 mr3">
+      <div class="bg-black-60">
+        <nav class="pv3 ph3 ph4-ns" role="navigation">
+          <div class="flex-l justify-between items-center center">
+            <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
               
-              <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="/" title="Accueil page">
-                  Accueil
-                </a>
-              </li>
+                <img src="/images/logo.png" class="w100 mw5-ns" alt="Le Numérique Responsable" />
               
-              <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="/impacts/" title="Impacts du Numérique page">
-                  Impacts du Numérique
-                </a>
-              </li>
+            </a>
+            <div class="flex-l items-center">
               
-              <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="/quiz/" title="Quiz page">
-                  Quiz
-                </a>
-              </li>
+                <ul class="pl0 mr3">
+                  
+                  <li class="list f5 f4-ns fw4 dib pr3">
+                    <a class="hover-white no-underline white-90" href="/" title="Accueil page">
+                      Accueil
+                    </a>
+                  </li>
+                  
+                  <li class="list f5 f4-ns fw4 dib pr3">
+                    <a class="hover-white no-underline white-90" href="/impacts/" title="Impacts du Numérique page">
+                      Impacts du Numérique
+                    </a>
+                  </li>
+                  
+                  <li class="list f5 f4-ns fw4 dib pr3">
+                    <a class="hover-white no-underline white-90" href="/quiz/" title="Quiz page">
+                      Quiz
+                    </a>
+                  </li>
+                  
+                  <li class="list f5 f4-ns fw4 dib pr3">
+                    <a class="hover-white no-underline white-90" href="/stockage/" title="Stockage page">
+                      Stockage
+                    </a>
+                  </li>
+                  
+                </ul>
               
-              <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="/stockage/" title="Stockage page">
-                  Stockage
-                </a>
-              </li>
-              
-            </ul>
-          
-        </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header> 
+    </header>
     <main class="pb7" role="main">
       
   <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
-    <section class="flex-ns mt5 flex-wrap justify-around">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Articles</span>
+    <h1 class="f3 near-black">
+      <a href="/articles/2025-05-22-test-1-2-1-2/" class="link black dim">
+        Test 1 2 1 2 
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <!--StartFragment-->
+<h2 id="what-is-lorem-ipsum">What is Lorem Ipsum?</h2>
+<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <a href="/articles/2025-05-22-test-1-2-1-2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/cloud/" class="link black dim">
@@ -120,9 +146,9 @@
 
         </div>
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/ecoconception/" class="link black dim">
@@ -162,9 +188,9 @@
 
         </div>
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/ecoindex/" class="link black dim">
@@ -209,9 +235,9 @@ Cet outil permet de mesurer l&rsquo;impact environnemental de votre site web.</p
 
         </div>
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/hebergeurs-verts/" class="link black dim">
@@ -250,9 +276,9 @@ Cet outil permet de mesurer l&rsquo;impact environnemental de votre site web.</p
 
         </div>
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/equipements/" class="link black dim">
@@ -292,9 +318,9 @@ Cet outil permet de mesurer l&rsquo;impact environnemental de votre site web.</p
 
         </div>
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/recyclage/" class="link black dim">
@@ -332,9 +358,9 @@ Cet outil permet de mesurer l&rsquo;impact environnemental de votre site web.</p
 
         </div>
       
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Articles</span>
     <h1 class="f3 near-black">
       <a href="/articles/usage/" class="link black dim">
@@ -390,6 +416,7 @@ Cet outil permet de mesurer l&rsquo;impact environnemental de votre site web.</p
     <div> </div>
   </div>
 </footer> 
+    
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
@@ -398,6 +425,17 @@ Cet outil permet de mesurer l&rsquo;impact environnemental de votre site web.</p
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
             });
+          }
+        });
+      }
+    </script>
+    
+    <script>
+      if (window.netlifyVisualEditor) {
+        window.netlifyVisualEditor.init({
+          onSave: function(data) {
+            
+            console.log('Content saved:', data);
           }
         });
       }

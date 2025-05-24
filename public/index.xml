@@ -6,8 +6,15 @@
     <description>Recent content in Éco-Numérique on Le Numérique Responsable</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 May 2025 09:55:55 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test 1 2 1 2 </title>
+      <link>http://localhost:1313/articles/2025-05-22-test-1-2-1-2/</link>
+      <pubDate>Thu, 22 May 2025 09:55:55 +0000</pubDate>
+      <guid>http://localhost:1313/articles/2025-05-22-test-1-2-1-2/</guid>
+      <description>&lt;!--StartFragment--&gt;&#xD;&#xA;&lt;h2 id=&#34;what-is-lorem-ipsum&#34;&gt;What is Lorem Ipsum?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lorem Ipsum&lt;/strong&gt; is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Calculez votre empreinte numérique</title>
       <link>http://localhost:1313/calculateur/</link>

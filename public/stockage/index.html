@@ -22,13 +22,19 @@
 
 
   <style>
-    body {
+    .cover {
       background-image: url('/images/header.jpg');
-      background-size: cover;
-      background-position: center;
     }
   </style>
  
+    
+    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
+    <script>
+      window.netlifyVisualEditor = {
+        siteId: 'numeriqueresponsable',
+        collections: "{\"articles\":{\"file\":\"{slug}.md\",\"path\":\"content/articles\"},\"home\":{\"file\":\"_index.md\",\"path\":\"content\"},\"pages\":{\"file\":\"{slug}.md\",\"path\":\"content\"}}"
+      };
+    </script>
   </head>
   <body class="ma0 avenir bg-near-white">
     <header class="cover bg-top" style="background-image: url('/images/header.jpg');">
@@ -78,14 +84,29 @@
     <main class="pb7" role="main">
       
   
-  
-  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked ttu">
           
         Éco-Numérique
-      </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">Stockage</h1>
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Stockage</h1>
       
       
       
@@ -128,6 +149,7 @@
     <div> </div>
   </div>
 </footer> 
+    
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
@@ -136,6 +158,17 @@
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
             });
+          }
+        });
+      }
+    </script>
+    
+    <script>
+      if (window.netlifyVisualEditor) {
+        window.netlifyVisualEditor.init({
+          onSave: function(data) {
+            
+            console.log('Content saved:', data);
           }
         });
       }
