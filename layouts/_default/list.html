@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <div class="mw8 center">
+    <h1 class="f1 athelas tc">
+      {{ .Title }}
+    </h1>
+    {{ with .Params.description }}
+      <p class="f4 lh-copy measure-wide center">
+        {{ . }}
+      </p>
+    {{ end }}
+    <section class="flex-ns flex-wrap justify-around mt5">
+      {{ range .Pages }}
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          {{ if .Params.image }}
+            <div class="mb3">
+              <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-100">
+            </div>
+          {{ end }}
+          <h2 class="f3 lh-title">
+            <a href="{{ .RelPermalink }}" class="link black dim">
+              {{ .Title }}
+            </a>
+          </h2>
+          {{ with .Params.description }}
+            <p class="f6 lh-copy measure-wide">
+              {{ . }}
+            </p>
+          {{ end }}
+          {{ if .Params.date }}
+            <time class="f6 mv4 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+              {{- .Date.Format "2 January 2006" -}}
+            </time>
+          {{ end }}
+          {{ if .Params.author }}
+            <p class="f6 mv4 dib tracked">
+              Par {{ .Params.author }}
+            </p>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  </div>
+{{ end }} 
