@@ -14,6 +14,7 @@ title = "Le Numérique Responsable"
     target = "layouts"
   [[module.imports]]
     path = "github.com/theNewDynamic/gohugo-theme-ananke"
+    version = "v0.0.0-20240125144928-ea681f0d0163"
 
 [params]
   custom_css = ["/css/custom.css"]
