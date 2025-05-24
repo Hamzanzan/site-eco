@@ -1,7 +1,19 @@
 baseURL = "https://monsite-eco.fr/"
 languageCode = "fr-fr"
 title = "Le Numérique Responsable"
-theme = "ananke"
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke"
 
 [params]
   custom_css = ["/css/custom.css"]

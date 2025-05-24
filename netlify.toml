@@ -4,7 +4,7 @@
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ./"
 
 [build.environment]
-  HUGO_VERSION = "0.110.0"
+  HUGO_VERSION = "0.121.2"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
   NODE_VERSION = "18"
@@ -29,22 +29,22 @@
   autoLaunch = true
 
 [dev.environment]
-  HUGO_VERSION = "0.110.0"
+  HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
 
 [context.production.environment]
-  HUGO_VERSION = "0.110.0"
+  HUGO_VERSION = "0.121.2"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.110.0"
+  HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.110.0"
+  HUGO_VERSION = "0.121.2"
   HUGO_ENV = "development"
   HUGO_ENABLEGITINFO = "true"
 
