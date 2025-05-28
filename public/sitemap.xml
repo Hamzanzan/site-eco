@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/articles/</loc>
+    <loc>http://localhost:51737/articles/</loc>
     <lastmod>2025-05-22T09:55:55+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:51737/</loc>
     <lastmod>2025-05-22T09:55:55+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/2025-05-22-test-1-2-1-2/</loc>
+    <loc>http://localhost:51737/articles/2025-05-22-test-1-2-1-2/</loc>
     <lastmod>2025-05-22T09:55:55+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/calculateur/</loc>
+    <loc>http://localhost:51737/calculateur/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/cloud/</loc>
+    <loc>http://localhost:51737/articles/cloud/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/ecoconception/</loc>
+    <loc>http://localhost:51737/articles/ecoconception/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/ecoindex/</loc>
+    <loc>http://localhost:51737/articles/ecoindex/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/hebergeurs-verts/</loc>
+    <loc>http://localhost:51737/articles/hebergeurs-verts/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/equipements/</loc>
+    <loc>http://localhost:51737/articles/equipements/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/recyclage/</loc>
+    <loc>http://localhost:51737/articles/recyclage/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/usage/</loc>
+    <loc>http://localhost:51737/articles/usage/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:51737/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/impacts/</loc>
+    <loc>http://localhost:51737/impacts/</loc>
   </url><url>
-    <loc>http://localhost:1313/quiz/</loc>
+    <loc>http://localhost:51737/quiz/</loc>
   </url><url>
-    <loc>http://localhost:1313/stockage/</loc>
+    <loc>http://localhost:51737/stockage/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:51737/tags/</loc>
   </url>
 </urlset>

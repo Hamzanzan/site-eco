@@ -7,11 +7,6 @@ local_backend: true
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
-# Configuration pour le Visual Editor
-editor:
-  preview_styles:
-    - "/css/custom.css"
-
 collections:
   - name: "pages"
     label: "Pages"
@@ -53,4 +48,4 @@ collections:
           - {label: "Titre", name: "title", widget: "string", required: true}
           - {label: "Description", name: "description", widget: "text", required: true}
           - {label: "Image", name: "image", widget: "image", required: false}
-          - {label: "Contenu", name: "body", widget: "markdown", required: true}
+          - {label: "Contenu", name: "body", widget: "markdown", required: true} 
