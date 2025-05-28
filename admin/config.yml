@@ -2,52 +2,16 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: true
-
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "content"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Titre", name: "title", widget: "string", required: true}
-      - {label: "Description", name: "description", widget: "text", required: true}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Mise en page", name: "layout", widget: "string", required: false}
-      - {label: "Menu", name: "menu", widget: "string", required: false}
-      - {label: "Poids", name: "weight", widget: "number", required: false}
-      - {label: "Contenu", name: "body", widget: "markdown", required: true}
-
-  - name: "articles"
-    label: "Articles"
+  - name: "blog"
+    label: "Blog"
     folder: "content/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Titre", name: "title", widget: "string", required: true}
-      - {label: "Description", name: "description", widget: "text", required: true}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Date", name: "date", widget: "datetime", required: false}
-      - {label: "Auteur", name: "author", widget: "string", required: false}
-      - {label: "Catégories", name: "categories", widget: "list", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Brouillon", name: "draft", widget: "boolean", required: false}
-      - {label: "Contenu", name: "body", widget: "markdown", required: true}
-
-  - name: "home"
-    label: "Page d'accueil"
-    folder: "content"
-    create: false
-    files:
-      - file: "_index.md"
-        label: "Accueil"
-        name: "index"
-        fields:
-          - {label: "Titre", name: "title", widget: "string", required: true}
-          - {label: "Description", name: "description", widget: "text", required: true}
-          - {label: "Image", name: "image", widget: "image", required: false}
-          - {label: "Contenu", name: "body", widget: "markdown", required: true} 
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Contenu", name: "body", widget: "markdown"} 
