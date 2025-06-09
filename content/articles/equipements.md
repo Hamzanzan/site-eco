@@ -1,6 +1,5 @@
 ---
 title: "L'impact des équipements numériques"
-date: 2024-06-01
 ---
 
 # L'impact environnemental des équipements numériques
@@ -22,8 +21,4 @@ Nos ordinateurs, smartphones et tablettes ont un impact majeur sur l'environneme
 - Garder ses appareils plus longtemps
 - Privilégier le reconditionné ou la seconde main
 - Recycler correctement ses anciens équipements
-- Éviter le renouvellement inutile
-
-<div class="equipements-visuel">
-  <img src="/images/equipements-cycle.png" alt="Cycle de vie d'un appareil" style="max-width:400px; margin:2rem auto; display:block;"/>
-</div> 
+- Éviter le renouvellement inutile 

@@ -1,0 +1,267 @@
+{{ define "quiz" }}
+<div class="quiz-container">
+  <h1>Quiz : Le Numérique Responsable</h1>
+  <p class="quiz-intro">Testez vos connaissances sur l'impact environnemental du numérique et découvrez comment réduire votre empreinte carbone digitale.</p>
+
+  <div id="quiz">
+    <div class="question" id="q1">
+      <h3>Question 1/10</h3>
+      <p>Quel pourcentage des émissions mondiales de gaz à effet de serre est attribué au numérique ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(1, 'a')">A. 1%</button>
+        <button onclick="checkAnswer(1, 'b')">B. 4%</button>
+        <button onclick="checkAnswer(1, 'c')">C. 10%</button>
+        <button onclick="checkAnswer(1, 'd')">D. 15%</button>
+      </div>
+    </div>
+
+    <div class="question" id="q2" style="display: none;">
+      <h3>Question 2/10</h3>
+      <p>Quelle est la phase qui génère le plus d'impact environnemental dans le cycle de vie d'un smartphone ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(2, 'a')">A. L'utilisation</button>
+        <button onclick="checkAnswer(2, 'b')">B. La fabrication</button>
+        <button onclick="checkAnswer(2, 'c')">C. Le transport</button>
+        <button onclick="checkAnswer(2, 'd')">D. Le recyclage</button>
+      </div>
+    </div>
+
+    <div class="question" id="q3" style="display: none;">
+      <h3>Question 3/10</h3>
+      <p>Combien d'emails stockés pendant un an équivalent à la consommation d'une ampoule allumée pendant 1 heure ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(3, 'a')">A. 10 emails</button>
+        <button onclick="checkAnswer(3, 'b')">B. 50 emails</button>
+        <button onclick="checkAnswer(3, 'c')">C. 100 emails</button>
+        <button onclick="checkAnswer(3, 'd')">D. 500 emails</button>
+      </div>
+    </div>
+
+    <div class="question" id="q4" style="display: none;">
+      <h3>Question 4/10</h3>
+      <p>Quelle est la meilleure pratique pour réduire l'impact environnemental de vos recherches web ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(4, 'a')">A. Utiliser plusieurs onglets</button>
+        <button onclick="checkAnswer(4, 'b')">B. Préciser vos recherches</button>
+        <button onclick="checkAnswer(4, 'c')">C. Utiliser le mode incognito</button>
+        <button onclick="checkAnswer(4, 'd')">D. Effacer l'historique</button>
+      </div>
+    </div>
+
+    <div class="question" id="q5" style="display: none;">
+      <h3>Question 5/10</h3>
+      <p>Quelle est la durée de vie moyenne d'un smartphone en France ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(5, 'a')">A. 1 an</button>
+        <button onclick="checkAnswer(5, 'b')">B. 2 ans</button>
+        <button onclick="checkAnswer(5, 'c')">C. 3 ans</button>
+        <button onclick="checkAnswer(5, 'd')">D. 4 ans</button>
+      </div>
+    </div>
+
+    <div class="question" id="q6" style="display: none;">
+      <h3>Question 6/10</h3>
+      <p>Quelle est la consommation énergétique d'une recherche sur Google ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(6, 'a')">A. 0.0003 kWh</button>
+        <button onclick="checkAnswer(6, 'b')">B. 0.003 kWh</button>
+        <button onclick="checkAnswer(6, 'c')">C. 0.03 kWh</button>
+        <button onclick="checkAnswer(6, 'd')">D. 0.3 kWh</button>
+      </div>
+    </div>
+
+    <div class="question" id="q7" style="display: none;">
+      <h3>Question 7/10</h3>
+      <p>Quelle est la meilleure solution pour stocker ses données de manière éco-responsable ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(7, 'a')">A. Stockage cloud illimité</button>
+        <button onclick="checkAnswer(7, 'b')">B. Disque dur externe</button>
+        <button onclick="checkAnswer(7, 'c')">C. Stockage local + sauvegarde sélective</button>
+        <button onclick="checkAnswer(7, 'd')">D. Stockage sur plusieurs clouds</button>
+      </div>
+    </div>
+
+    <div class="question" id="q8" style="display: none;">
+      <h3>Question 8/10</h3>
+      <p>Quelle est la consommation d'eau nécessaire à la fabrication d'un smartphone ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(8, 'a')">A. 100 litres</button>
+        <button onclick="checkAnswer(8, 'b')">B. 500 litres</button>
+        <button onclick="checkAnswer(8, 'c')">C. 1000 litres</button>
+        <button onclick="checkAnswer(8, 'd')">D. 1300 litres</button>
+      </div>
+    </div>
+
+    <div class="question" id="q9" style="display: none;">
+      <h3>Question 9/10</h3>
+      <p>Quelle est la meilleure pratique pour réduire l'impact de vos emails ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(9, 'a')">A. Les archiver</button>
+        <button onclick="checkAnswer(9, 'b')">B. Les supprimer régulièrement</button>
+        <button onclick="checkAnswer(9, 'c')">C. Réduire le nombre de destinataires</button>
+        <button onclick="checkAnswer(9, 'd')">D. Utiliser des pièces jointes légères</button>
+      </div>
+    </div>
+
+    <div class="question" id="q10" style="display: none;">
+      <h3>Question 10/10</h3>
+      <p>Quelle est la durée de vie recommandée pour un ordinateur portable ?</p>
+      <div class="options">
+        <button onclick="checkAnswer(10, 'a')">A. 2-3 ans</button>
+        <button onclick="checkAnswer(10, 'b')">B. 3-4 ans</button>
+        <button onclick="checkAnswer(10, 'c')">C. 4-5 ans</button>
+        <button onclick="checkAnswer(10, 'd')">D. 5-6 ans</button>
+      </div>
+    </div>
+
+    <div id="results" style="display: none;">
+      <h2>Votre score : <span id="score">0</span>/10</h2>
+      <p id="feedback"></p>
+      <button onclick="restartQuiz()">Recommencer le quiz</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.question {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.options button {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.options button:hover {
+  background: #e0e0e0;
+}
+
+#results {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+#results button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correct {
+  background: #4CAF50 !important;
+  color: white !important;
+}
+
+.incorrect {
+  background: #f44336 !important;
+  color: white !important;
+}
+</style>
+
+<script>
+let currentQuestion = 1;
+let score = 0;
+const answers = {
+  1: 'b', // 4%
+  2: 'b', // La fabrication
+  3: 'c', // 100 emails
+  4: 'b', // Préciser vos recherches
+  5: 'b', // 2 ans
+  6: 'a', // 0.0003 kWh
+  7: 'c', // Stockage local + sauvegarde sélective
+  8: 'd', // 1300 litres
+  9: 'b', // Les supprimer régulièrement
+  10: 'd' // 5-6 ans
+};
+
+function checkAnswer(question, answer) {
+  const buttons = document.querySelectorAll(`#q${question} button`);
+  buttons.forEach(button => {
+    button.disabled = true;
+    if (button.textContent.charAt(0).toLowerCase() === answers[question]) {
+      button.classList.add('correct');
+    }
+  });
+
+  if (answer === answers[question]) {
+    score++;
+  } else {
+    const correctButton = document.querySelector(`#q${question} button:nth-child(${answers[question].charCodeAt(0) - 96})`);
+    correctButton.classList.add('correct');
+  }
+
+  setTimeout(() => {
+    if (question < 10) {
+      document.getElementById(`q${question}`).style.display = 'none';
+      document.getElementById(`q${question + 1}`).style.display = 'block';
+    } else {
+      showResults();
+    }
+  }, 1000);
+}
+
+function showResults() {
+  document.getElementById('quiz').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('score').textContent = score;
+  
+  let feedback = '';
+  if (score >= 8) {
+    feedback = 'Excellent ! Vous êtes un expert du numérique responsable !';
+  } else if (score >= 6) {
+    feedback = 'Bien ! Vous avez de bonnes connaissances sur le sujet.';
+  } else if (score >= 4) {
+    feedback = 'Pas mal ! Il y a encore des choses à apprendre.';
+  } else {
+    feedback = 'Continuez à vous informer sur le numérique responsable !';
+  }
+  document.getElementById('feedback').textContent = feedback;
+}
+
+function restartQuiz() {
+  currentQuestion = 1;
+  score = 0;
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('quiz').style.display = 'block';
+  document.getElementById('q1').style.display = 'block';
+  
+  // Réinitialiser tous les boutons
+  document.querySelectorAll('.question button').forEach(button => {
+    button.disabled = false;
+    button.classList.remove('correct', 'incorrect');
+  });
+}
+</script>
+{{ end }} 

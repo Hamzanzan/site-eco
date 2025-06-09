@@ -1,7 +1,337 @@
 ---
-title: "Quiz"
+title: "Quiz - Testez vos connaissances"
 ---
 
-## Testez vos connaissances sur l’écologie numérique
+{{< rawhtml >}}
+<div>
+  <div class="quiz-container">
+    <h1>Quiz : Le Numérique Responsable</h1>
+    <p class="quiz-intro">Testez vos connaissances sur l'impact environnemental du numérique et découvrez comment réduire votre empreinte carbone digitale.</p>
 
-{{< quiz >}}
+    <div id="quiz">
+      <div class="question" id="q1">
+        <h3>Question 1/10</h3>
+        <p>Quel pourcentage des émissions mondiales de gaz à effet de serre est attribué au numérique ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(1, 'a')">A. 1%</button>
+          <button onclick="checkAnswer(1, 'b')">B. 4%</button>
+          <button onclick="checkAnswer(1, 'c')">C. 10%</button>
+          <button onclick="checkAnswer(1, 'd')">D. 15%</button>
+        </div>
+        <p class="explanation" id="exp1" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q2" style="display: none;">
+        <h3>Question 2/10</h3>
+        <p>Quelle est la phase qui génère le plus d'impact environnemental dans le cycle de vie d'un smartphone ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(2, 'a')">A. L'utilisation</button>
+          <button onclick="checkAnswer(2, 'b')">B. La fabrication</button>
+          <button onclick="checkAnswer(2, 'c')">C. Le transport</button>
+          <button onclick="checkAnswer(2, 'd')">D. Le recyclage</button>
+        </div>
+        <p class="explanation" id="exp2" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q3" style="display: none;">
+        <h3>Question 3/10</h3>
+        <p>Combien d'emails stockés pendant un an équivalent à la consommation d'une ampoule allumée pendant 1 heure ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(3, 'a')">A. 10 emails</button>
+          <button onclick="checkAnswer(3, 'b')">B. 50 emails</button>
+          <button onclick="checkAnswer(3, 'c')">C. 100 emails</button>
+          <button onclick="checkAnswer(3, 'd')">D. 500 emails</button>
+        </div>
+        <p class="explanation" id="exp3" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q4" style="display: none;">
+        <h3>Question 4/10</h3>
+        <p>Quelle est la meilleure pratique pour réduire l'impact environnemental de vos recherches web ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(4, 'a')">A. Utiliser plusieurs onglets</button>
+          <button onclick="checkAnswer(4, 'b')">B. Préciser vos recherches</button>
+          <button onclick="checkAnswer(4, 'c')">C. Utiliser le mode incognito</button>
+          <button onclick="checkAnswer(4, 'd')">D. Effacer l'historique</button>
+        </div>
+        <p class="explanation" id="exp4" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q5" style="display: none;">
+        <h3>Question 5/10</h3>
+        <p>Quelle est la durée de vie moyenne d'un smartphone en France ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(5, 'a')">A. 1 an</button>
+          <button onclick="checkAnswer(5, 'b')">B. 2 ans</button>
+          <button onclick="checkAnswer(5, 'c')">C. 3 ans</button>
+          <button onclick="checkAnswer(5, 'd')">D. 4 ans</button>
+        </div>
+        <p class="explanation" id="exp5" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q6" style="display: none;">
+        <h3>Question 6/10</h3>
+        <p>Quelle est la consommation énergétique d'une recherche sur Google ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(6, 'a')">A. 0.0003 kWh</button>
+          <button onclick="checkAnswer(6, 'b')">B. 0.003 kWh</button>
+          <button onclick="checkAnswer(6, 'c')">C. 0.03 kWh</button>
+          <button onclick="checkAnswer(6, 'd')">D. 0.3 kWh</button>
+        </div>
+        <p class="explanation" id="exp6" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q7" style="display: none;">
+        <h3>Question 7/10</h3>
+        <p>Quelle est la meilleure solution pour stocker ses données de manière éco-responsable ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(7, 'a')">A. Stockage cloud illimité</button>
+          <button onclick="checkAnswer(7, 'b')">B. Disque dur externe</button>
+          <button onclick="checkAnswer(7, 'c')">C. Stockage local + sauvegarde sélective</button>
+          <button onclick="checkAnswer(7, 'd')">D. Stockage sur plusieurs clouds</button>
+        </div>
+        <p class="explanation" id="exp7" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q8" style="display: none;">
+        <h3>Question 8/10</h3>
+        <p>Quelle est la consommation d'eau nécessaire à la fabrication d'un smartphone ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(8, 'a')">A. 100 litres</button>
+          <button onclick="checkAnswer(8, 'b')">B. 500 litres</button>
+          <button onclick="checkAnswer(8, 'c')">C. 1000 litres</button>
+          <button onclick="checkAnswer(8, 'd')">D. 1300 litres</button>
+        </div>
+        <p class="explanation" id="exp8" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q9" style="display: none;">
+        <h3>Question 9/10</h3>
+        <p>Quelle est la meilleure pratique pour réduire l'impact de vos emails ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(9, 'a')">A. Les archiver</button>
+          <button onclick="checkAnswer(9, 'b')">B. Les supprimer régulièrement</button>
+          <button onclick="checkAnswer(9, 'c')">C. Réduire le nombre de destinataires</button>
+          <button onclick="checkAnswer(9, 'd')">D. Utiliser des pièces jointes légères</button>
+        </div>
+        <p class="explanation" id="exp9" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q10" style="display: none;">
+        <h3>Question 10/10</h3>
+        <p>Quelle est la durée de vie recommandée pour un ordinateur portable ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(10, 'a')">A. 2-3 ans</button>
+          <button onclick="checkAnswer(10, 'b')">B. 3-4 ans</button>
+          <button onclick="checkAnswer(10, 'c')">C. 4-5 ans</button>
+          <button onclick="checkAnswer(10, 'd')">D. 5-6 ans</button>
+        </div>
+        <p class="explanation" id="exp10" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div id="results" style="display: none;">
+        <h2>Votre score : <span id="score">0</span>/10</h2>
+        <p id="feedback"></p>
+        <button onclick="restartQuiz()">Recommencer le quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+  .quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .quiz-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+  }
+
+  .question {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .options button {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .options button:hover {
+    background: #e0e0e0;
+  }
+
+  #results {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+
+  #results button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .correct {
+    background: #4CAF50 !important;
+    color: white !important;
+  }
+
+  .incorrect {
+    background: #f44336 !important;
+    color: white !important;
+  }
+
+  .explanation {
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 15px; /* Add some padding inside the border */
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Space above explanation */
+    font-size: 1em; /* Adjust font size */
+    color: #333; /* Darker text color */
+  }
+  </style>
+
+  <script>
+  let currentQuestion = 1;
+  let score = 0;
+  const answers = {
+    1: 'b', // 4%
+    2: 'b', // La fabrication
+    3: 'c', // 100 emails
+    4: 'b', // Préciser vos recherches
+    5: 'b', // 2 ans
+    6: 'a', // 0.0003 kWh
+    7: 'c', // Stockage local + sauvegarde sélective
+    8: 'd', // 1300 litres
+    9: 'b', // Les supprimer régulièrement
+    10: 'd' // 5-6 ans
+  };
+
+  const explanations = {
+    1: "Le numérique représente environ 4% des émissions mondiales de gaz à effet de serre.",
+    2: "La phase de fabrication est la plus impactante dans le cycle de vie d'un smartphone en raison de l'extraction des matières premières et de la consommation d'énergie.",
+    3: "Stocker 100 emails pendant un an équivaut à la consommation d'une ampoule allumée pendant 1 heure. Le stockage de données consomme de l'énergie.",
+    4: "Préciser vos recherches réduit le nombre de requêtes et donc la consommation d'énergie des serveurs. Utiliser des moteurs de recherche 'verts' est aussi une bonne pratique.",
+    5: "La durée de vie moyenne d'un smartphone en France est d'environ 2 ans. Allonger la durée de vie des appareils est crucial pour réduire leur impact.",
+    6: "Une seule recherche sur Google consomme une petite quantité d'énergie, mais l'accumulation de milliards de recherches a un impact significatif. L'estimation est d'environ 0.0003 kWh par recherche.",
+    7: "Le stockage local avec une sauvegarde sélective sur un disque dur externe est souvent plus éco-responsable que le stockage illimité sur le cloud, qui nécessite d'énormes infrastructures énergivores.",
+    8: "La fabrication d'un smartphone nécessite une grande quantité d'eau, estimée à environ 1300 litres, principalement pour l'extraction et le traitement des matières premières.",
+    9: "Supprimer régulièrement les emails (surtout ceux avec pièces jointes) réduit la quantité de données stockées sur les serveurs des fournisseurs, diminuant ainsi leur consommation énergétique.",
+    10: "Un ordinateur portable peut avoir une durée de vie recommandée de 5 à 6 ans, voire plus avec un entretien approprié et des mises à niveau si possible. Remplacer moins souvent ses appareils réduit grandement l'impact environnemental."
+  };
+
+  function checkAnswer(question, answer) {
+    const buttons = document.querySelectorAll(`#q${question} button`);
+    buttons.forEach(button => {
+      button.disabled = true;
+      button.classList.remove('correct', 'incorrect'); 
+    });
+
+    const selectedButton = buttons[answer.charCodeAt(0) - 97];
+    if (answer === answers[question]) {
+      selectedButton.classList.add('correct');
+    } else {
+      selectedButton.classList.add('incorrect');
+    }
+
+    const correctAnswerButton = buttons[answers[question].charCodeAt(0) - 97];
+    if (!correctAnswerButton.classList.contains('correct')) {
+        correctAnswerButton.classList.add('correct');
+    }
+
+    // Show the explanation
+    const explanationElement = document.getElementById(`exp${question}`);
+    if (explanationElement) {
+        explanationElement.textContent = explanations[question];
+        explanationElement.style.display = 'block';
+    }
+
+    if (answer === answers[question]) {
+      score++;
+    }
+
+    setTimeout(() => {
+      const currentQuestionElement = document.getElementById(`q${question}`);
+      const currentExplanationElement = document.getElementById(`exp${question}`);
+
+      if (question < 10) {
+        currentQuestionElement.style.display = 'none';
+        if (currentExplanationElement) {
+            currentExplanationElement.style.display = 'none'; // Hide explanation before moving
+        }
+        document.getElementById(`q${question + 1}`).style.display = 'block';
+        buttons.forEach(button => {
+            button.classList.remove('correct', 'incorrect');
+            button.disabled = false; 
+        });
+      } else {
+        if (currentExplanationElement) {
+            currentExplanationElement.style.display = 'none'; // Hide explanation after last question
+        }
+        showResults();
+      }
+    }, 5000); // Increased delay to 5 seconds to allow time to read explanation
+  }
+
+  function showResults() {
+    document.getElementById('quiz').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score').textContent = score;
+    
+    let feedback = '';
+    if (score >= 8) {
+      feedback = 'Excellent ! Vous êtes un expert du numérique responsable !';
+    } else if (score >= 6) {
+      feedback = 'Bien ! Vous avez de bonnes connaissances sur le sujet.';
+    } else if (score >= 4) {
+      feedback = 'Pas mal ! Il y a encore des choses à apprendre.';
+    } else {
+      feedback = 'Continuez à vous informer sur le numérique responsable !';
+    }
+    document.getElementById('feedback').textContent = feedback;
+  }
+
+  function restartQuiz() {
+    currentQuestion = 1;
+    score = 0;
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('quiz').style.display = 'block';
+    document.getElementById('q1').style.display = 'block';
+    
+    // Réinitialiser tous les boutons et cacher les explications
+    document.querySelectorAll('.question button').forEach(button => {
+      button.disabled = false;
+      button.classList.remove('correct', 'incorrect');
+    });
+    document.querySelectorAll('.explanation').forEach(exp => {
+        exp.style.display = 'none';
+        exp.textContent = ''; // Clear previous explanation text
+    });
+  }
+  </script>
+</div>
+{{< /rawhtml >}}

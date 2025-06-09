@@ -1,32 +1,50 @@
 <div id="quiz" class="quiz-container">
   <form id="eco-quiz">
-    <div class="quiz-question" data-answer="b" data-explanation="Une recherche internet émet en moyenne 7g de CO2.">
+    <div class="quiz-question" data-answer="b" data-explanation="Une recherche internet émet en moyenne 7g de CO2. Cela équivaut à environ 0,2% des émissions d'une voiture sur 1km. Les centres de données qui traitent ces recherches consomment énormément d'énergie pour le refroidissement et le traitement des données.">
       <p>1. Combien de CO2 émet en moyenne une recherche internet ?</p>
       <label><input type="radio" name="q1" value="a"> a) 0,7g</label><br>
       <label><input type="radio" name="q1" value="b"> b) 7g</label><br>
       <label><input type="radio" name="q1" value="c"> c) 70g</label><br>
     </div>
-    <div class="quiz-question" data-answer="b" data-explanation="Environ 4% des émissions mondiales de GES sont dues au numérique.">
+    <div class="quiz-question" data-answer="b" data-explanation="Environ 4% des émissions mondiales de GES sont dues au numérique, soit plus que le secteur aérien (2,5%). Cette proportion pourrait atteindre 8% d'ici 2025 si les tendances actuelles se poursuivent. Les centres de données représentent environ 1% de cette consommation.">
       <p>2. Quel pourcentage des émissions mondiales de GES est dû au numérique ?</p>
       <label><input type="radio" name="q2" value="a"> a) 1%</label><br>
       <label><input type="radio" name="q2" value="b"> b) 4%</label><br>
       <label><input type="radio" name="q2" value="c"> c) 10%</label><br>
     </div>
-    <div class="quiz-question" data-answer="b" data-explanation="Garder son smartphone plus longtemps a le plus d'impact.">
+    <div class="quiz-question" data-answer="b" data-explanation="Garder son smartphone plus longtemps a le plus d'impact car 80% de l'empreinte carbone d'un smartphone est liée à sa fabrication. En gardant son téléphone 4 ans au lieu de 2, on réduit son impact de 40%. La fabrication nécessite des métaux rares dont l'extraction est très polluante.">
       <p>3. Quelle action a le plus d'impact pour réduire l'empreinte du numérique ?</p>
       <label><input type="radio" name="q3" value="a"> a) Fermer les onglets inutiles</label><br>
       <label><input type="radio" name="q3" value="b"> b) Garder son smartphone plus longtemps</label><br>
       <label><input type="radio" name="q3" value="c"> c) Vider la corbeille</label><br>
     </div>
-    <div class="quiz-question" data-answer="a" data-explanation="Le streaming vidéo est l'un des usages les plus énergivores.">
+    <div class="quiz-question" data-answer="a" data-explanation="Le streaming vidéo représente 60% du trafic internet mondial et émet 300 millions de tonnes de CO2 par an. La HD et la 4K multiplient la consommation par 4 à 10. Un film en streaming en 4K émet autant de CO2 que 4 heures de chauffage.">
       <p>4. Quel usage numérique consomme le plus d'énergie ?</p>
       <label><input type="radio" name="q4" value="a"> a) Streaming vidéo</label><br>
       <label><input type="radio" name="q4" value="b"> b) Envoyer des emails</label><br>
       <label><input type="radio" name="q4" value="c"> c) Naviguer sur des sites web</label><br>
     </div>
+    <div class="quiz-question" data-answer="c" data-explanation="L'IA et le machine learning sont très énergivores car ils nécessitent d'énormes quantités de calculs. L'entraînement d'un modèle d'IA peut émettre autant de CO2 que 5 voitures pendant toute leur durée de vie. Les data centers dédiés à l'IA consomment des quantités massives d'électricité.">
+      <p>5. Quelle technologie émergente a le plus d'impact sur la consommation énergétique du numérique ?</p>
+      <label><input type="radio" name="q5" value="a"> a) La 5G</label><br>
+      <label><input type="radio" name="q5" value="b"> b) La blockchain</label><br>
+      <label><input type="radio" name="q5" value="c"> c) L'intelligence artificielle</label><br>
+    </div>
+    <div class="quiz-question" data-answer="a" data-explanation="La fabrication d'un smartphone nécessite environ 70 matériaux différents, dont des métaux rares comme le tantale, le cobalt et les terres rares. L'extraction de ces matériaux cause d'importants dégâts environnementaux et sociaux. Un smartphone de 200g nécessite l'extraction de 70kg de matières premières.">
+      <p>6. Combien de matériaux différents sont nécessaires pour fabriquer un smartphone ?</p>
+      <label><input type="radio" name="q6" value="a"> a) Environ 70</label><br>
+      <label><input type="radio" name="q6" value="b"> b) Environ 20</label><br>
+      <label><input type="radio" name="q6" value="c"> c) Environ 10</label><br>
+    </div>
+    <div class="quiz-question" data-answer="c" data-explanation="Les data centers consomment environ 200 TWh d'électricité par an, soit 1% de la consommation mondiale. Le refroidissement représente 40% de cette consommation. Un data center moyen consomme autant d'électricité qu'une ville de 50 000 habitants.">
+      <p>7. Quelle est la part de la consommation électrique mondiale due aux data centers ?</p>
+      <label><input type="radio" name="q7" value="a"> a) 0,1%</label><br>
+      <label><input type="radio" name="q7" value="b"> b) 0,5%</label><br>
+      <label><input type="radio" name="q7" value="c"> c) 1%</label><br>
+    </div>
     <div class="quiz-progress">
-      <span id="quiz-progress-text">Question 1/4</span>
-      <progress id="quiz-progress-bar" value="1" max="4"></progress>
+      <span id="quiz-progress-text">Question 1/7</span>
+      <progress id="quiz-progress-bar" value="1" max="7"></progress>
       <div id="quiz-progress-percent">0%</div>
     </div>
     <button type="button" id="next-btn">Suivant</button>
@@ -119,14 +137,20 @@ nextBtn.onclick = function() {
     } else {
       showResult();
     }
-  }, 1200);
+  }, 5000); // Increased from 1200ms to 5000ms (5 seconds)
 };
 
 function showResult() {
   let msg = `<h3>Votre score : ${score}/${questions.length}</h3>`;
-  if (score === questions.length) msg += "Bravo, vous êtes un(e) éco-expert !";
-  else if (score >= questions.length-1) msg += "Très bien, continuez à vous informer !";
-  else msg += "N'hésitez pas à explorer le site pour en apprendre plus.";
+  if (score === questions.length) {
+    msg += "<p>🎉 Bravo, vous êtes un(e) expert(e) en numérique responsable !</p>";
+  } else if (score >= questions.length-2) {
+    msg += "<p>👏 Excellent ! Vous avez une très bonne connaissance du sujet.</p>";
+  } else if (score >= questions.length-4) {
+    msg += "<p>👍 Bien ! Vous avez une bonne base de connaissances.</p>";
+  } else {
+    msg += "<p>💡 Continuez à explorer le site pour en apprendre plus sur le numérique responsable.</p>";
+  }
   feedbackDiv.innerHTML = `<div class='quiz-result-final'>${msg}</div>`;
   nextBtn.style.display = 'none';
   retryBtn.style.display = '';
@@ -141,7 +165,21 @@ reviewBtn.onclick = function() {
     const user = answers[i] || '(aucune réponse)';
     const correct = q.dataset.answer;
     const explanation = q.dataset.explanation;
-    html += `<li><strong>Q${i+1}:</strong> ${q.querySelector('p').textContent}<br>Votre réponse : <span class='${user===correct?'good':'bad'}'>${user}</span> <br>Bonne réponse : <span class='good'>${correct}</span><br><small>${explanation}</small></li>`;
+    html += `<li>
+      <strong>Q${i+1}:</strong> ${q.querySelector('p').textContent}<br>
+      <div class="answer-details">
+        <div class="user-answer ${user===correct?'good':'bad'}">
+          <strong>Votre réponse :</strong> ${user}
+        </div>
+        <div class="correct-answer good">
+          <strong>Bonne réponse :</strong> ${correct}
+        </div>
+        <div class="explanation">
+          <strong>Explication :</strong><br>
+          <small>${explanation}</small>
+        </div>
+      </div>
+    </li>`;
   });
   html += '</ul>';
   reviewDiv.innerHTML = html;
@@ -155,25 +193,202 @@ reviewBtn.style.display = 'none';
 </script>
 
 <style>
-.quiz-container { max-width: 540px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 16px #0001; padding: 2rem; }
-.quiz-question { display: none; margin-bottom: 1.5rem; transition: opacity 0.35s; }
-.quiz-question.fade-in { animation: fadeIn 0.4s; }
-.quiz-question.fade-out { animation: fadeOut 0.35s; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: none;} }
-@keyframes fadeOut { from { opacity: 1;} to { opacity: 0; } }
-.quiz-question p { font-weight: 600; }
-.quiz-question label { display: block; margin: 0.5rem 0; padding: 0.3rem 0.7rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
-.quiz-progress { margin: 1rem 0; text-align: center; }
-#quiz-progress-percent { font-size: 1.1em; margin-top: 0.3em; color: #3498db; font-weight: 600; }
-.quiz-alert { color: #c0392b; margin-bottom: 1rem; }
-.quiz-explanation { background: #f1f8e9; border-left: 4px solid #2ecc71; padding: 0.7rem 1rem; border-radius: 6px; margin-bottom: 1rem; }
-.quiz-result-final { background: #e3f2fd; border-left: 4px solid #3498db; padding: 1rem 1.5rem; border-radius: 8px; text-align: center; font-size: 1.2rem; }
-.quiz-review-list { list-style: none; padding: 0; }
-.quiz-review-list li { margin-bottom: 1.2em; background: #f8f9fa; border-radius: 8px; padding: 1em; }
-.quiz-review-list .good { color: #2ecc71; font-weight: bold; }
-.quiz-review-list .bad { color: #e74c3c; font-weight: bold; }
-#next-btn, #retry-btn, #review-btn { background: #2ecc71; color: #fff; border: none; border-radius: 6px; padding: 0.7rem 1.5rem; font-weight: 600; margin: 1rem 0.5rem 0 0; cursor: pointer; transition: background 0.2s; }
-#next-btn:hover, #retry-btn:hover, #review-btn:hover { background: #27ae60; }
-progress { width: 100%; height: 18px; border-radius: 8px; }
-@media (max-width: 600px) { .quiz-container { padding: 1rem; } }
+.quiz-container { 
+  max-width: 600px; 
+  margin: 2rem auto; 
+  background: #fff; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1); 
+  padding: 2.5rem; 
+}
+
+.quiz-question { 
+  display: none; 
+  margin-bottom: 2rem; 
+  transition: opacity 0.35s; 
+}
+
+.quiz-question.fade-in { 
+  animation: fadeIn 0.4s; 
+}
+
+.quiz-question.fade-out { 
+  animation: fadeOut 0.35s; 
+}
+
+@keyframes fadeIn { 
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  } 
+  to { 
+    opacity: 1; 
+    transform: none;
+  } 
+}
+
+@keyframes fadeOut { 
+  from { 
+    opacity: 1;
+  } 
+  to { 
+    opacity: 0; 
+  } 
+}
+
+.quiz-question p { 
+  font-weight: 600; 
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.quiz-question label { 
+  display: block; 
+  margin: 0.8rem 0; 
+  padding: 0.8rem 1.2rem; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: all 0.2s;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.quiz-question label:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.quiz-progress { 
+  margin: 1.5rem 0; 
+  text-align: center; 
+}
+
+#quiz-progress-percent { 
+  font-size: 1.1em; 
+  margin-top: 0.5em; 
+  color: var(--green-accent); 
+  font-weight: 600; 
+}
+
+.quiz-alert { 
+  color: #c0392b; 
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fdf2f2;
+  border-radius: 8px;
+  border-left: 4px solid #c0392b;
+}
+
+.quiz-explanation { 
+  background: #f1f8e9; 
+  border-left: 4px solid #2ecc71; 
+  padding: 1rem 1.5rem; 
+  border-radius: 8px; 
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.quiz-explanation small {
+  display: block;
+  margin-top: 0.8rem;
+  color: #2c3e50;
+}
+
+.quiz-result-final { 
+  background: #e3f2fd; 
+  border-left: 4px solid #3498db; 
+  padding: 1.5rem; 
+  border-radius: 12px; 
+  text-align: center; 
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.quiz-review-list { 
+  list-style: none; 
+  padding: 0; 
+}
+
+.quiz-review-list li { 
+  margin-bottom: 1.5em; 
+  background: #f8f9fa; 
+  border-radius: 12px; 
+  padding: 1.5em;
+  border: 1px solid #e9ecef;
+}
+
+.answer-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.user-answer, .correct-answer, .explanation {
+  margin: 0.8rem 0;
+}
+
+.quiz-review-list .good { 
+  color: #2ecc71; 
+  font-weight: bold; 
+}
+
+.quiz-review-list .bad { 
+  color: #e74c3c; 
+  font-weight: bold; 
+}
+
+#next-btn, #retry-btn, #review-btn { 
+  background: var(--green-accent); 
+  color: #fff; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 0.8rem 1.8rem; 
+  font-weight: 600; 
+  margin: 1rem 0.5rem 0 0; 
+  cursor: pointer; 
+  transition: all 0.2s;
+  font-size: 1.1rem;
+}
+
+#next-btn:hover, #retry-btn:hover, #review-btn:hover { 
+  background: var(--green-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+progress { 
+  width: 100%; 
+  height: 20px; 
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+progress::-webkit-progress-bar {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background: var(--green-accent);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 600px) { 
+  .quiz-container { 
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .quiz-question p {
+    font-size: 1.1rem;
+  }
+  
+  .quiz-explanation {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 </style> 

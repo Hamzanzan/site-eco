@@ -1,6 +1,5 @@
 ---
 title: "Usage quotidien : adopter les bons gestes numériques"
-date: 2024-06-01
 ---
 
 # Usage quotidien : adopter les bons gestes numériques
@@ -21,9 +20,6 @@ date: 2024-06-01
       <li>Extensions pour mesurer l'empreinte carbone de sa navigation</li>
       <li>Applications pour suivre sa consommation d'énergie</li>
     </ul>
-  </div>
-  <div class="usage-visuel">
-    <img src="/images/eco-gestes.png" alt="Gestes numériques responsables" class="usage-img-large"/>
   </div>
 </div>
 

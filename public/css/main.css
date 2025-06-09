@@ -11,11 +11,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 200px;
-  background-color: #e6f3e6; /* Vert très clair */
+  background-color: #31dc31; /* Vert très clair */
 }
 
 .bg-black-60 {
-  background-color: rgba(76, 175, 80, 0.1); /* Vert clair avec transparence */
+  background-color: rgba(7, 176, 30, 0.1); /* Vert clair avec transparence */
   width: 100%;
   min-height: 200px;
 }

@@ -1,0 +1,9 @@
+# Redirections de l'app React vers le site Hugo
+https://deluxe-khapse-8992b9.netlify.app/impacts/*  https://numeriqueresponsable.netlify.app/impacts/:splat  301
+https://deluxe-khapse-8992b9.netlify.app/quiz/*    https://numeriqueresponsable.netlify.app/quiz/:splat      301
+https://deluxe-khapse-8992b9.netlify.app/stockage/* https://numeriqueresponsable.netlify.app/stockage/:splat  301
+
+# Redirections du site Hugo vers l'app React
+https://numeriqueresponsable.netlify.app/impacts/*  https://deluxe-khapse-8992b9.netlify.app/impacts/:splat  301
+https://numeriqueresponsable.netlify.app/quiz/*    https://deluxe-khapse-8992b9.netlify.app/quiz/:splat      301
+https://numeriqueresponsable.netlify.app/stockage/* https://deluxe-khapse-8992b9.netlify.app/stockage/:splat  301 

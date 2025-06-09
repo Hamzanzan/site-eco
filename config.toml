@@ -4,10 +4,9 @@ title = "Le Numérique Responsable"
 theme = "ananke"
 
 [params]
-  custom_css = ["/css/custom.css"]
+  custom_css = ["/css/eco-style.css"]
   favicon = "images/logo.png"
   site_logo = "images/logo.png"
-  background = "images/header.jpg"
 
 [params.ananke]
   show_recent_posts = false
@@ -55,58 +54,3 @@ theme = "ananke"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-# Configuration Netlify Visual Editor
-[params.netlify]
-  visual_editor = true
-  site_id = "numeriqueresponsable"
-
-[params.netlify.collections]
-  # Pages principales
-  pages = { path = "content", file = "{slug}.md" }
-  # Articles de blog
-  articles = { path = "content/articles", file = "{slug}.md" }
-  # Page d'accueil
-  home = { path = "content", file = "_index.md" }
-
-# Configuration des champs personnalisés pour l'éditeur visuel
-[params.netlify.fields]
-  # Champs communs à tous les contenus
-  [params.netlify.fields.common]
-    title = { type = "string", required = true }
-    description = { type = "text", required = true }
-    image = { type = "image", required = false }
-    date = { type = "datetime", required = false }
-
-  # Champs spécifiques aux articles
-  [params.netlify.fields.articles]
-    author = { type = "string", required = false }
-    categories = { type = "list", required = false }
-    tags = { type = "list", required = false }
-    draft = { type = "boolean", required = false }
-
-  # Champs spécifiques aux pages
-  [params.netlify.fields.pages]
-    layout = { type = "string", required = false }
-    menu = { type = "string", required = false }
-    weight = { type = "number", required = false }
-
-# Configuration des sections pour l'éditeur visuel
-[params.netlify.sections]
-  [params.netlify.sections.articles]
-    name = "Articles"
-    description = "Articles de blog sur le numérique responsable"
-    icon = "article"
-    fields = ["title", "description", "image", "date", "author", "categories", "tags", "draft"]
-
-  [params.netlify.sections.pages]
-    name = "Pages"
-    description = "Pages principales du site"
-    icon = "page"
-    fields = ["title", "description", "image", "layout", "menu", "weight"]
-
-  [params.netlify.sections.home]
-    name = "Page d'accueil"
-    description = "Contenu de la page d'accueil"
-    icon = "home"
-    fields = ["title", "description", "image"]

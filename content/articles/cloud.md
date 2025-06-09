@@ -1,6 +1,5 @@
 ---
 title: "Cloud & Data : l'empreinte du stockage numérique"
-date: 2024-06-01
 ---
 
 # Cloud & Data : l'empreinte du stockage numérique
@@ -20,7 +19,3 @@ Le stockage de données dans le cloud et les data centers consomme beaucoup d'é
 - Supprimer les fichiers et emails inutiles
 - Privilégier les services cloud éco-responsables
 - Limiter le streaming et la sauvegarde automatique
-
-<div class="cloud-visuel">
-  <img src="/images/datacenter.png" alt="Data center" style="max-width:400px; margin:2rem auto; display:block;"/>
-</div> 

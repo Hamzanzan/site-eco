@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51737&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Le Numérique Responsable</title>
     
   
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/eco-style.css">
   
 
 
@@ -20,22 +20,10 @@
   <link rel="logo" href="/images/logo.png">
 
 
-
-  <style>
-    .cover {
-      background-image: url('/images/header.jpg');
-    }
-  </style>
  
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="ma0 avenir bg-near-white"
-  
-    data-netlify-collections='{&#34;articles&#34;:{&#34;file&#34;:&#34;{slug}.md&#34;,&#34;path&#34;:&#34;content/articles&#34;},&#34;home&#34;:{&#34;file&#34;:&#34;_index.md&#34;,&#34;path&#34;:&#34;content&#34;},&#34;pages&#34;:{&#34;file&#34;:&#34;{slug}.md&#34;,&#34;path&#34;:&#34;content&#34;}}'
-    data-netlify-site-id='numeriqueresponsable'
-  
-  >
-    <header class="cover bg-top" style="background-image: url('/images/header.jpg');">
+  <body class="ma0 avenir bg-near-white">
+    <header class="cover bg-top" style="background-image: url('/');">
       <div class="bg-black-60">
         <nav class="pv3 ph3 ph4-ns" role="navigation">
           <div class="flex-l justify-between items-center center">
@@ -81,236 +69,368 @@
     </header>
     <main class="pb7" role="main">
       
-  <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
-      <header>
-        <h1 class="f1">
-          Quiz
-        </h1>
-      </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
-        <h2 id="testez-vos-connaissances-sur-lécologie-numérique">Testez vos connaissances sur l’écologie numérique</h2>
-<div id="quiz" class="quiz-container">
-  <form id="eco-quiz">
-    <div class="quiz-question" data-answer="b" data-explanation="Une recherche internet émet en moyenne 7g de CO2.">
-      <p>1. Combien de CO2 émet en moyenne une recherche internet ?</p>
-      <label><input type="radio" name="q1" value="a"> a) 0,7g</label><br>
-      <label><input type="radio" name="q1" value="b"> b) 7g</label><br>
-      <label><input type="radio" name="q1" value="c"> c) 70g</label><br>
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      
+      <h1 class="f1 athelas mt3 mb1">Quiz - Testez vos connaissances</h1>
+      
+      
+      
+    </header>
+
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l">
+<div>
+  <div class="quiz-container">
+    <h1>Quiz : Le Numérique Responsable</h1>
+    <p class="quiz-intro">Testez vos connaissances sur l'impact environnemental du numérique et découvrez comment réduire votre empreinte carbone digitale.</p>
+
+    <div id="quiz">
+      <div class="question" id="q1">
+        <h3>Question 1/10</h3>
+        <p>Quel pourcentage des émissions mondiales de gaz à effet de serre est attribué au numérique ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(1, 'a')">A. 1%</button>
+          <button onclick="checkAnswer(1, 'b')">B. 4%</button>
+          <button onclick="checkAnswer(1, 'c')">C. 10%</button>
+          <button onclick="checkAnswer(1, 'd')">D. 15%</button>
+        </div>
+        <p class="explanation" id="exp1" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q2" style="display: none;">
+        <h3>Question 2/10</h3>
+        <p>Quelle est la phase qui génère le plus d'impact environnemental dans le cycle de vie d'un smartphone ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(2, 'a')">A. L'utilisation</button>
+          <button onclick="checkAnswer(2, 'b')">B. La fabrication</button>
+          <button onclick="checkAnswer(2, 'c')">C. Le transport</button>
+          <button onclick="checkAnswer(2, 'd')">D. Le recyclage</button>
+        </div>
+        <p class="explanation" id="exp2" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q3" style="display: none;">
+        <h3>Question 3/10</h3>
+        <p>Combien d'emails stockés pendant un an équivalent à la consommation d'une ampoule allumée pendant 1 heure ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(3, 'a')">A. 10 emails</button>
+          <button onclick="checkAnswer(3, 'b')">B. 50 emails</button>
+          <button onclick="checkAnswer(3, 'c')">C. 100 emails</button>
+          <button onclick="checkAnswer(3, 'd')">D. 500 emails</button>
+        </div>
+        <p class="explanation" id="exp3" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q4" style="display: none;">
+        <h3>Question 4/10</h3>
+        <p>Quelle est la meilleure pratique pour réduire l'impact environnemental de vos recherches web ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(4, 'a')">A. Utiliser plusieurs onglets</button>
+          <button onclick="checkAnswer(4, 'b')">B. Préciser vos recherches</button>
+          <button onclick="checkAnswer(4, 'c')">C. Utiliser le mode incognito</button>
+          <button onclick="checkAnswer(4, 'd')">D. Effacer l'historique</button>
+        </div>
+        <p class="explanation" id="exp4" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q5" style="display: none;">
+        <h3>Question 5/10</h3>
+        <p>Quelle est la durée de vie moyenne d'un smartphone en France ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(5, 'a')">A. 1 an</button>
+          <button onclick="checkAnswer(5, 'b')">B. 2 ans</button>
+          <button onclick="checkAnswer(5, 'c')">C. 3 ans</button>
+          <button onclick="checkAnswer(5, 'd')">D. 4 ans</button>
+        </div>
+        <p class="explanation" id="exp5" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q6" style="display: none;">
+        <h3>Question 6/10</h3>
+        <p>Quelle est la consommation énergétique d'une recherche sur Google ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(6, 'a')">A. 0.0003 kWh</button>
+          <button onclick="checkAnswer(6, 'b')">B. 0.003 kWh</button>
+          <button onclick="checkAnswer(6, 'c')">C. 0.03 kWh</button>
+          <button onclick="checkAnswer(6, 'd')">D. 0.3 kWh</button>
+        </div>
+        <p class="explanation" id="exp6" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q7" style="display: none;">
+        <h3>Question 7/10</h3>
+        <p>Quelle est la meilleure solution pour stocker ses données de manière éco-responsable ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(7, 'a')">A. Stockage cloud illimité</button>
+          <button onclick="checkAnswer(7, 'b')">B. Disque dur externe</button>
+          <button onclick="checkAnswer(7, 'c')">C. Stockage local + sauvegarde sélective</button>
+          <button onclick="checkAnswer(7, 'd')">D. Stockage sur plusieurs clouds</button>
+        </div>
+        <p class="explanation" id="exp7" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q8" style="display: none;">
+        <h3>Question 8/10</h3>
+        <p>Quelle est la consommation d'eau nécessaire à la fabrication d'un smartphone ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(8, 'a')">A. 100 litres</button>
+          <button onclick="checkAnswer(8, 'b')">B. 500 litres</button>
+          <button onclick="checkAnswer(8, 'c')">C. 1000 litres</button>
+          <button onclick="checkAnswer(8, 'd')">D. 1300 litres</button>
+        </div>
+        <p class="explanation" id="exp8" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q9" style="display: none;">
+        <h3>Question 9/10</h3>
+        <p>Quelle est la meilleure pratique pour réduire l'impact de vos emails ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(9, 'a')">A. Les archiver</button>
+          <button onclick="checkAnswer(9, 'b')">B. Les supprimer régulièrement</button>
+          <button onclick="checkAnswer(9, 'c')">C. Réduire le nombre de destinataires</button>
+          <button onclick="checkAnswer(9, 'd')">D. Utiliser des pièces jointes légères</button>
+        </div>
+        <p class="explanation" id="exp9" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div class="question" id="q10" style="display: none;">
+        <h3>Question 10/10</h3>
+        <p>Quelle est la durée de vie recommandée pour un ordinateur portable ?</p>
+        <div class="options">
+          <button onclick="checkAnswer(10, 'a')">A. 2-3 ans</button>
+          <button onclick="checkAnswer(10, 'b')">B. 3-4 ans</button>
+          <button onclick="checkAnswer(10, 'c')">C. 4-5 ans</button>
+          <button onclick="checkAnswer(10, 'd')">D. 5-6 ans</button>
+        </div>
+        <p class="explanation" id="exp10" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;"></p>
+      </div>
+
+      <div id="results" style="display: none;">
+        <h2>Votre score : <span id="score">0</span>/10</h2>
+        <p id="feedback"></p>
+        <button onclick="restartQuiz()">Recommencer le quiz</button>
+      </div>
     </div>
-    <div class="quiz-question" data-answer="b" data-explanation="Environ 4% des émissions mondiales de GES sont dues au numérique.">
-      <p>2. Quel pourcentage des émissions mondiales de GES est dû au numérique ?</p>
-      <label><input type="radio" name="q2" value="a"> a) 1%</label><br>
-      <label><input type="radio" name="q2" value="b"> b) 4%</label><br>
-      <label><input type="radio" name="q2" value="c"> c) 10%</label><br>
-    </div>
-    <div class="quiz-question" data-answer="b" data-explanation="Garder son smartphone plus longtemps a le plus d'impact.">
-      <p>3. Quelle action a le plus d'impact pour réduire l'empreinte du numérique ?</p>
-      <label><input type="radio" name="q3" value="a"> a) Fermer les onglets inutiles</label><br>
-      <label><input type="radio" name="q3" value="b"> b) Garder son smartphone plus longtemps</label><br>
-      <label><input type="radio" name="q3" value="c"> c) Vider la corbeille</label><br>
-    </div>
-    <div class="quiz-question" data-answer="a" data-explanation="Le streaming vidéo est l'un des usages les plus énergivores.">
-      <p>4. Quel usage numérique consomme le plus d'énergie ?</p>
-      <label><input type="radio" name="q4" value="a"> a) Streaming vidéo</label><br>
-      <label><input type="radio" name="q4" value="b"> b) Envoyer des emails</label><br>
-      <label><input type="radio" name="q4" value="c"> c) Naviguer sur des sites web</label><br>
-    </div>
-    <div class="quiz-progress">
-      <span id="quiz-progress-text">Question 1/4</span>
-      <progress id="quiz-progress-bar" value="1" max="4"></progress>
-      <div id="quiz-progress-percent">0%</div>
-    </div>
-    <button type="button" id="next-btn">Suivant</button>
-    <button type="button" id="retry-btn" style="display:none;">Recommencer</button>
-    <button type="button" id="review-btn" style="display:none;">Voir mes réponses</button>
-  </form>
-  <div id="quiz-feedback"></div>
-  <div id="quiz-review" style="display:none;"></div>
+  </div>
+
+  <style>
+  .quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .quiz-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+  }
+
+  .question {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .options button {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .options button:hover {
+    background: #e0e0e0;
+  }
+
+  #results {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+
+  #results button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .correct {
+    background: #4CAF50 !important;
+    color: white !important;
+  }
+
+  .incorrect {
+    background: #f44336 !important;
+    color: white !important;
+  }
+
+  .explanation {
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 15px; /* Add some padding inside the border */
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Space above explanation */
+    font-size: 1em; /* Adjust font size */
+    color: #333; /* Darker text color */
+  }
+  </style>
+
+  <script>
+  let currentQuestion = 1;
+  let score = 0;
+  const answers = {
+    1: 'b', // 4%
+    2: 'b', // La fabrication
+    3: 'c', // 100 emails
+    4: 'b', // Préciser vos recherches
+    5: 'b', // 2 ans
+    6: 'a', // 0.0003 kWh
+    7: 'c', // Stockage local + sauvegarde sélective
+    8: 'd', // 1300 litres
+    9: 'b', // Les supprimer régulièrement
+    10: 'd' // 5-6 ans
+  };
+
+  const explanations = {
+    1: "Le numérique représente environ 4% des émissions mondiales de gaz à effet de serre.",
+    2: "La phase de fabrication est la plus impactante dans le cycle de vie d'un smartphone en raison de l'extraction des matières premières et de la consommation d'énergie.",
+    3: "Stocker 100 emails pendant un an équivaut à la consommation d'une ampoule allumée pendant 1 heure. Le stockage de données consomme de l'énergie.",
+    4: "Préciser vos recherches réduit le nombre de requêtes et donc la consommation d'énergie des serveurs. Utiliser des moteurs de recherche 'verts' est aussi une bonne pratique.",
+    5: "La durée de vie moyenne d'un smartphone en France est d'environ 2 ans. Allonger la durée de vie des appareils est crucial pour réduire leur impact.",
+    6: "Une seule recherche sur Google consomme une petite quantité d'énergie, mais l'accumulation de milliards de recherches a un impact significatif. L'estimation est d'environ 0.0003 kWh par recherche.",
+    7: "Le stockage local avec une sauvegarde sélective sur un disque dur externe est souvent plus éco-responsable que le stockage illimité sur le cloud, qui nécessite d'énormes infrastructures énergivores.",
+    8: "La fabrication d'un smartphone nécessite une grande quantité d'eau, estimée à environ 1300 litres, principalement pour l'extraction et le traitement des matières premières.",
+    9: "Supprimer régulièrement les emails (surtout ceux avec pièces jointes) réduit la quantité de données stockées sur les serveurs des fournisseurs, diminuant ainsi leur consommation énergétique.",
+    10: "Un ordinateur portable peut avoir une durée de vie recommandée de 5 à 6 ans, voire plus avec un entretien approprié et des mises à niveau si possible. Remplacer moins souvent ses appareils réduit grandement l'impact environnemental."
+  };
+
+  function checkAnswer(question, answer) {
+    const buttons = document.querySelectorAll(`#q${question} button`);
+    buttons.forEach(button => {
+      button.disabled = true;
+      button.classList.remove('correct', 'incorrect'); 
+    });
+
+    const selectedButton = buttons[answer.charCodeAt(0) - 97];
+    if (answer === answers[question]) {
+      selectedButton.classList.add('correct');
+    } else {
+      selectedButton.classList.add('incorrect');
+    }
+
+    const correctAnswerButton = buttons[answers[question].charCodeAt(0) - 97];
+    if (!correctAnswerButton.classList.contains('correct')) {
+        correctAnswerButton.classList.add('correct');
+    }
+
+    // Show the explanation
+    const explanationElement = document.getElementById(`exp${question}`);
+    if (explanationElement) {
+        explanationElement.textContent = explanations[question];
+        explanationElement.style.display = 'block';
+    }
+
+    if (answer === answers[question]) {
+      score++;
+    }
+
+    setTimeout(() => {
+      const currentQuestionElement = document.getElementById(`q${question}`);
+      const currentExplanationElement = document.getElementById(`exp${question}`);
+
+      if (question < 10) {
+        currentQuestionElement.style.display = 'none';
+        if (currentExplanationElement) {
+            currentExplanationElement.style.display = 'none'; // Hide explanation before moving
+        }
+        document.getElementById(`q${question + 1}`).style.display = 'block';
+        buttons.forEach(button => {
+            button.classList.remove('correct', 'incorrect');
+            button.disabled = false; 
+        });
+      } else {
+        if (currentExplanationElement) {
+            currentExplanationElement.style.display = 'none'; // Hide explanation after last question
+        }
+        showResults();
+      }
+    }, 5000); // Increased delay to 5 seconds to allow time to read explanation
+  }
+
+  function showResults() {
+    document.getElementById('quiz').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score').textContent = score;
+    
+    let feedback = '';
+    if (score >= 8) {
+      feedback = 'Excellent ! Vous êtes un expert du numérique responsable !';
+    } else if (score >= 6) {
+      feedback = 'Bien ! Vous avez de bonnes connaissances sur le sujet.';
+    } else if (score >= 4) {
+      feedback = 'Pas mal ! Il y a encore des choses à apprendre.';
+    } else {
+      feedback = 'Continuez à vous informer sur le numérique responsable !';
+    }
+    document.getElementById('feedback').textContent = feedback;
+  }
+
+  function restartQuiz() {
+    currentQuestion = 1;
+    score = 0;
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('quiz').style.display = 'block';
+    document.getElementById('q1').style.display = 'block';
+    
+    // Réinitialiser tous les boutons et cacher les explications
+    document.querySelectorAll('.question button').forEach(button => {
+      button.disabled = false;
+      button.classList.remove('correct', 'incorrect');
+    });
+    document.querySelectorAll('.explanation').forEach(exp => {
+        exp.style.display = 'none';
+        exp.textContent = ''; // Clear previous explanation text
+    });
+  }
+  </script>
+</div>
+ 
+<ul class="pa0">
+  
+</ul>
 </div>
 
-<script>
-const questions = document.querySelectorAll('.quiz-question');
-let current = 0;
-let score = 0;
-let answers = [];
-const nextBtn = document.getElementById('next-btn');
-const retryBtn = document.getElementById('retry-btn');
-const reviewBtn = document.getElementById('review-btn');
-const feedbackDiv = document.getElementById('quiz-feedback');
-const progressText = document.getElementById('quiz-progress-text');
-const progressBar = document.getElementById('quiz-progress-bar');
-const progressPercent = document.getElementById('quiz-progress-percent');
-const reviewDiv = document.getElementById('quiz-review');
-
-function animateTransition(from, to) {
-  from.classList.add('fade-out');
-  setTimeout(() => {
-    from.style.display = 'none';
-    to.style.display = 'block';
-    to.classList.add('fade-in');
-    setTimeout(() => to.classList.remove('fade-in'), 400);
-    from.classList.remove('fade-out');
-  }, 350);
-}
-
-function showQuestion(idx) {
-  questions.forEach((q, i) => {
-    if (i === idx) {
-      q.style.display = 'block';
-      q.classList.add('fade-in');
-      setTimeout(() => q.classList.remove('fade-in'), 400);
-    } else {
-      q.style.display = 'none';
-    }
-  });
-  progressText.textContent = `Question ${idx+1}/${questions.length}`;
-  progressBar.value = idx+1;
-  progressPercent.textContent = Math.round(((idx+1)/questions.length)*100) + '%';
-  nextBtn.textContent = idx === questions.length-1 ? 'Valider mes réponses' : 'Suivant';
-}
-
-function resetQuiz() {
-  current = 0;
-  score = 0;
-  answers = [];
-  feedbackDiv.innerHTML = '';
-  nextBtn.style.display = '';
-  retryBtn.style.display = 'none';
-  reviewBtn.style.display = 'none';
-  reviewDiv.style.display = 'none';
-  showQuestion(0);
-  document.querySelectorAll('input[type=radio]').forEach(i => i.checked = false);
-}
-
-nextBtn.onclick = function() {
-  const q = questions[current];
-  const selected = q.querySelector('input[type=radio]:checked');
-  if (!selected) {
-    feedbackDiv.innerHTML = '<div class="quiz-alert">Veuillez sélectionner une réponse.</div>';
-    return;
-  }
-  feedbackDiv.innerHTML = '';
-  answers[current] = selected.value;
-  
-  const correct = selected.value === q.dataset.answer;
-  if (correct) score++;
-  q.querySelectorAll('label').forEach(label => {
-    const input = label.querySelector('input');
-    label.style.background = input.checked ? (correct ? '#d4edda' : '#f8d7da') : '';
-    label.style.fontWeight = input.checked ? 'bold' : '';
-  });
-  
-  feedbackDiv.innerHTML = `<div class="quiz-explanation">${correct ? '✅ Bonne réponse !' : '❌ Mauvaise réponse.'} <br><small>${q.dataset.explanation}</small></div>`;
-  setTimeout(() => {
-    feedbackDiv.innerHTML = '';
-    if (current < questions.length-1) {
-      animateTransition(q, questions[current+1]);
-      current++;
-      showQuestion(current);
-    } else {
-      showResult();
-    }
-  }, 1200);
-};
-
-function showResult() {
-  let msg = `<h3>Votre score : ${score}/${questions.length}</h3>`;
-  if (score === questions.length) msg += "Bravo, vous êtes un(e) éco-expert !";
-  else if (score >= questions.length-1) msg += "Très bien, continuez à vous informer !";
-  else msg += "N'hésitez pas à explorer le site pour en apprendre plus.";
-  feedbackDiv.innerHTML = `<div class='quiz-result-final'>${msg}</div>`;
-  nextBtn.style.display = 'none';
-  retryBtn.style.display = '';
-  reviewBtn.style.display = '';
-}
-
-retryBtn.onclick = resetQuiz;
-
-reviewBtn.onclick = function() {
-  let html = `<h3>Vos réponses et corrections :</h3><ul class='quiz-review-list'>`;
-  questions.forEach((q, i) => {
-    const user = answers[i] || '(aucune réponse)';
-    const correct = q.dataset.answer;
-    const explanation = q.dataset.explanation;
-    html += `<li><strong>Q${i+1}:</strong> ${q.querySelector('p').textContent}<br>Votre réponse : <span class='${user===correct?'good':'bad'}'>${user}</span> <br>Bonne réponse : <span class='good'>${correct}</span><br><small>${explanation}</small></li>`;
-  });
-  html += '</ul>';
-  reviewDiv.innerHTML = html;
-  reviewDiv.style.display = 'block';
-};
+    <aside class="w-30-l mt6-l">
 
 
-showQuestion(0);
-retryBtn.style.display = 'none';
-reviewBtn.style.display = 'none';
-</script>
 
-<style>
-.quiz-container { max-width: 540px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 16px #0001; padding: 2rem; }
-.quiz-question { display: none; margin-bottom: 1.5rem; transition: opacity 0.35s; }
-.quiz-question.fade-in { animation: fadeIn 0.4s; }
-.quiz-question.fade-out { animation: fadeOut 0.35s; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: none;} }
-@keyframes fadeOut { from { opacity: 1;} to { opacity: 0; } }
-.quiz-question p { font-weight: 600; }
-.quiz-question label { display: block; margin: 0.5rem 0; padding: 0.3rem 0.7rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
-.quiz-progress { margin: 1rem 0; text-align: center; }
-#quiz-progress-percent { font-size: 1.1em; margin-top: 0.3em; color: #3498db; font-weight: 600; }
-.quiz-alert { color: #c0392b; margin-bottom: 1rem; }
-.quiz-explanation { background: #f1f8e9; border-left: 4px solid #2ecc71; padding: 0.7rem 1rem; border-radius: 6px; margin-bottom: 1rem; }
-.quiz-result-final { background: #e3f2fd; border-left: 4px solid #3498db; padding: 1rem 1.5rem; border-radius: 8px; text-align: center; font-size: 1.2rem; }
-.quiz-review-list { list-style: none; padding: 0; }
-.quiz-review-list li { margin-bottom: 1.2em; background: #f8f9fa; border-radius: 8px; padding: 1em; }
-.quiz-review-list .good { color: #2ecc71; font-weight: bold; }
-.quiz-review-list .bad { color: #e74c3c; font-weight: bold; }
-#next-btn, #retry-btn, #review-btn { background: #2ecc71; color: #fff; border: none; border-radius: 6px; padding: 0.7rem 1.5rem; font-weight: 600; margin: 1rem 0.5rem 0 0; cursor: pointer; transition: background 0.2s; }
-#next-btn:hover, #retry-btn:hover, #review-btn:hover { background: #27ae60; }
-progress { width: 100%; height: 18px; border-radius: 8px; }
-@media (max-width: 600px) { .quiz-container { padding: 1rem; } }
-</style> 
 
-      </div>
-    </article>
-  </div>
+</aside>
+  </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:51737/" >
+    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
       &copy; 2025 Le Numérique Responsable
     </a>
   </div>
 </footer> 
-    
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-    
-    <script src="https://unpkg.com/@netlify/visual-editor@latest/dist/visual-editor.js"></script>
-    <script>
-      if (window.netlifyVisualEditor) {
-        const netlifyCollectionsString = '{\u0022articles\u0022:{\u0022file\u0022:\u0022{slug}.md\u0022,\u0022path\u0022:\u0022content\/articles\u0022},\u0022home\u0022:{\u0022file\u0022:\u0022_index.md\u0022,\u0022path\u0022:\u0022content\u0022},\u0022pages\u0022:{\u0022file\u0022:\u0022{slug}.md\u0022,\u0022path\u0022:\u0022content\u0022}}';
-        const netlifyCollections = JSON.parse(netlifyCollectionsString);
-        const netlifySiteId = 'numeriqueresponsable';
-
-        window.netlifyVisualEditor.init({
-          siteId: netlifySiteId,
-          collections: netlifyCollections,
-          onSave: function(data) {
-            
-            console.log('Content saved:', data);
-          }
-        });
-      }
-    </script>
   </body>
 </html> 
