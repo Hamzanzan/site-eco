@@ -105,6 +105,21 @@ title: Éco-Numérique - Pour un Web Plus Vert
   </div>
 </div>
 
+<!-- Bouton pour ouvrir le pop-up -->
+<button class="ecoindex-btn" onclick="document.getElementById('ecoindex-popup').style.display='flex'">
+  Voir notre score EcoIndex
+</button>
+
+<!-- Pop-up EcoIndex -->
+<div id="ecoindex-popup" class="ecoindex-popup" style="display:none;">
+  <div class="ecoindex-popup-content">
+    <span class="ecoindex-popup-close" onclick="document.getElementById('ecoindex-popup').style.display='none'">&times;</span>
+    <h2>Notre score EcoIndex</h2>
+    <!-- Mets ici ton screenshot -->
+    <img src="/images/ecoindex-screenshot.png" alt="Score EcoIndex" style="max-width:100%;border-radius:12px;box-shadow:0 2px 12px #0002;">
+    <p style="margin-top:12px;">Un site éco-conçu, performant et responsable !</p>
+  </div>
+</div>
 
 <!-- Newsletter -->
 

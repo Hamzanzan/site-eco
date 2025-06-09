@@ -3,21 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/articles/</loc>
-    <lastmod>2025-05-22T09:55:55+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-22T09:55:55+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/2025-05-22-test-1-2-1-2/</loc>
-    <lastmod>2025-05-22T09:55:55+00:00</lastmod>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/calculateur/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/cloud/</loc>
+    <loc>http://localhost:1313/articles/ecoconception/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/ecoconception/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/ecoindex/</loc>
@@ -26,13 +20,7 @@
     <loc>http://localhost:1313/articles/hebergeurs-verts/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/equipements/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/articles/recyclage/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/usage/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/bonnes-pratiques/</loc>
@@ -58,12 +46,18 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/articles/cloud/</loc>
+  </url><url>
     <loc>http://localhost:1313/impacts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/articles/equipements/</loc>
   </url><url>
     <loc>http://localhost:1313/quiz/</loc>
   </url><url>
     <loc>http://localhost:1313/stockage/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/articles/usage/</loc>
   </url>
 </urlset>

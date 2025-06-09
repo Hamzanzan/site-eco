@@ -367,4 +367,30 @@ main, .main, .content {
   min-width: 320px;
   width: 340px;
   max-width: 100%;
+}
+
+.ecoindex-btn {
+  background: linear-gradient(90deg, #2ecc71 60%, #27ae60 100%);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 40px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18), 0 0 0 8px #2ecc7133;
+  transition: background 0.18s, color 0.18s, transform 0.15s, box-shadow 0.18s;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #0001;
+  margin: 32px auto 24px auto;
+  display: block;
+  outline: none;
+  position: relative;
+  z-index: 10;
+}
+.ecoindex-btn:hover, .ecoindex-btn:focus {
+  background: linear-gradient(90deg, #27ae60 60%, #145a32 100%);
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px #27ae6088, 0 0 0 12px #2ecc7144;
 } 
