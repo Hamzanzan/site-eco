@@ -74,9 +74,9 @@
       
       <h1 class="f1 athelas mt3 mb1">Calculez votre empreinte numérique</h1>
       
-      
-        <time class="f6 mv4 dib tracked" datetime="2024-06-01T00:00:00Z">1 June 2024</time>
-      
+      <p class="tracked">
+        Estimez l'impact de vos usages numériques quotidiens et découvrez comment le réduire !
+      </p>
       
     </header>
 
@@ -99,44 +99,44 @@
         </label>
       </div>
     </div>
-<pre><code>&lt;div class=&quot;form-section&quot;&gt;
-  &lt;h3&gt;📧 Communication&lt;/h3&gt;
-  &lt;div class=&quot;input-group&quot;&gt;
-    &lt;label&gt;Nombre d'emails envoyés par jour :
-      &lt;input type=&quot;number&quot; id=&quot;emails&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;
-      &lt;span class=&quot;info&quot;&gt;(1 email ≈ 4g CO2)&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;input-group&quot;&gt;
-    &lt;label&gt;Nombre de pièces jointes envoyées par jour :
-      &lt;input type=&quot;number&quot; id=&quot;attachments&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;
-      &lt;span class=&quot;info&quot;&gt;(1 pièce jointe ≈ 20g CO2)&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;form-section&quot;&gt;
-  &lt;h3&gt;💾 Stockage&lt;/h3&gt;
-  &lt;div class=&quot;input-group&quot;&gt;
-    &lt;label&gt;Espace de stockage cloud utilisé (GB) :
-      &lt;input type=&quot;number&quot; id=&quot;cloud&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;
-      &lt;span class=&quot;info&quot;&gt;(1 GB ≈ 0.2g CO2/an)&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+    <div class="form-section">
+      <h3>📧 Communication</h3>
+      <div class="input-group">
+        <label>Nombre d'emails envoyés par jour :
+          <input type="number" id="emails" min="0" value="0">
+          <span class="info">(1 email ≈ 4g CO2)</span>
+        </label>
+      </div>
+      <div class="input-group">
+        <label>Nombre de pièces jointes envoyées par jour :
+          <input type="number" id="attachments" min="0" value="0">
+          <span class="info">(1 pièce jointe ≈ 20g CO2)</span>
+        </label>
+      </div>
+    </div>
 
-&lt;div class=&quot;form-section&quot;&gt;
-  &lt;h3&gt;🔍 Navigation Web&lt;/h3&gt;
-  &lt;div class=&quot;input-group&quot;&gt;
-    &lt;label&gt;Nombre de recherches web par jour :
-      &lt;input type=&quot;number&quot; id=&quot;searches&quot; min=&quot;0&quot; value=&quot;0&quot;&gt;
-      &lt;span class=&quot;info&quot;&gt;(1 recherche ≈ 0.2g CO2)&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+    <div class="form-section">
+      <h3>💾 Stockage</h3>
+      <div class="input-group">
+        <label>Espace de stockage cloud utilisé (GB) :
+          <input type="number" id="cloud" min="0" value="0">
+          <span class="info">(1 GB ≈ 0.2g CO2/an)</span>
+        </label>
+      </div>
+    </div>
 
-&lt;button type=&quot;button&quot; onclick=&quot;calcEcoImpact()&quot; class=&quot;calc-button&quot;&gt;Calculer mon impact&lt;/button&gt;
-</code></pre>
+    <div class="form-section">
+      <h3>🔍 Navigation Web</h3>
+      <div class="input-group">
+        <label>Nombre de recherches web par jour :
+          <input type="number" id="searches" min="0" value="0">
+          <span class="info">(1 recherche ≈ 0.2g CO2)</span>
+        </label>
+      </div>
+    </div>
+
+    <button type="button" onclick="calcEcoImpact()" class="calc-button">Calculer mon impact</button>
   </form>
   <div id="eco-calc-result" class="eco-calc-result">
     <div id="result-content" style="display: none;">
@@ -155,12 +155,12 @@
           <div id="car-equivalent" class="impact-value">0 km</div>
         </div>
       </div>
-<pre><code>  &lt;div class=&quot;recommendations&quot;&gt;
-    &lt;h3&gt;Recommandations pour réduire votre impact&lt;/h3&gt;
-    &lt;div id=&quot;recommendations-list&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+
+      <div class="recommendations">
+        <h3>Recommandations pour réduire votre impact</h3>
+        <div id="recommendations-list"></div>
+      </div>
+    </div>
   </div>
 </div>
 <style>
